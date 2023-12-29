@@ -1,0 +1,44 @@
+.inputQuantityProductDetail{
+  width: 7.7rem;
+  height: 25px;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.selectTalle{
+  padding: 0 5px;
+  width: 9.375rem;
+}
+
+.btnAddCart{
+  background: var(--bg-light-dark);
+}
+
+.btnAddCart:hover{
+  background: #000;
+}
+
+.formComment,
+.containerComments{
+  width: 100%;
+}
+
+.textAreaCommentProduct{
+  font-size: 1rem;
+  height: 9.375rem;
+  resize: none;
+}
+
+.btnComment:hover{
+  background: var(--bg-hoverBtnComment);
+  color: #fff;
+}
+
+.imgProfile{
+  width: 4.6875rem;
+  height: 4.6875rem;
+}
+
+.btnReaction{
+  background:var(--bg-main);
+}

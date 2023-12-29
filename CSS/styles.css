@@ -1,0 +1,50 @@
+:root{
+  --bg-navbarMajor:#679ed8;
+  --text-hoverOptionsNav:#FC6B3F;
+  --bg-hoverButtonsNav: #d46464;
+  --bg-main: #FAFAFA;
+  --bg-light-dark: #131313;
+  --bg-hoverBtnComment: #666;
+  --bg-footer: #282A3A;
+  --text-titleFooter: #F2DEBA;
+  --bg-cardUs: #ecedfc;
+  --color-primary: #ea6c6c;
+}
+
+a {
+  text-decoration: none;
+}
+
+.accordion-button{
+  width: 10rem;
+  background-color: rgb(236, 235, 235);
+}
+
+.carousel-control-prev-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button{
+  width: 10rem;
+  background-color: rgb(236, 235, 235);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex-grow: 1;
+  background-color: var(--bg-main);
+}

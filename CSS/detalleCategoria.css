@@ -1,0 +1,10 @@
+.imageModa{
+  object-fit: fill;
+  width: 900px;
+  min-height: 18rem;
+}
+
+.imgCardCategory{
+  width: 13.4rem;
+  height: 14.5rem;
+}

@@ -1,0 +1,56 @@
+.navbar{
+  background:var(--bg-navbarMajor);
+}
+
+.logoNav{
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.navLink{
+  color: #fff;
+}
+
+.navLink:hover{
+  color: var(--bg-light-dark);
+}
+
+.search{
+  cursor: pointer;
+}
+
+.btnNav{
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.btnNav:hover{
+  background-color: var(--bg-hoverButtonsNav);
+}
+
+.iconCart{
+  color: var(--bg-light-dark);
+}
+
+.iconCart:hover{
+  color: #000;
+}
+
+.btnNav{
+  width: 50%;
+}
+
+.navItemSearch{
+  width: 14rem;
+  text-align: center;
+}
+
+.navItemSearch div{
+  width: 15.31rem;
+  max-width: 25rem;
+  text-align: center;
+}
+
+.navItemSearch div input{
+  width: 300px;
+}

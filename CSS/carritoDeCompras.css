@@ -1,0 +1,38 @@
+.cardHeaderProductCart{
+  background-color: #fff;
+}
+
+.cardHeaderProductCart .cardHeaderLink,
+div .linkEliminar{
+  text-decoration: none;
+}
+
+.cardHeaderProductCart .cardHeaderLink:hover,
+div .linkEliminar:hover{
+  text-decoration: underline;
+}
+
+.imageProductDetailCart{
+  width: 11rem;
+  height: 9.6rem;
+}
+
+.inputQuantity{
+  max-width: 6.25rem;
+}
+
+.cardDescriptionCart{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardOrderSummaryHeader{
+  background-color: #fff;
+  font-size: 1.125rem;
+}
+
+.cardOrderSummaryBody{
+  background-color: var(--bg-light-dark);
+  color: #fff;
+}

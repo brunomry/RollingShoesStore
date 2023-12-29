@@ -1,0 +1,71 @@
+@media all and (min-width:576px){
+  .btnNav{
+    width: 30%;
+  }
+
+  .containerOrderSummary{
+    position:static;
+  }
+  
+  .cardOrderSummaryBody{
+    background:#fff;
+    color: #000;
+  }
+}
+
+@media all and (min-width:768px){
+  #opcionesMenu ul{
+    flex-wrap: wrap;
+  }
+
+  .btnNav{
+    width: 95%;
+    margin-right: 5px;
+  }
+
+  .navItemSearch{
+    width: 25rem;
+    text-align: center;
+  }
+
+  .navItemSearch div{
+    width: 20rem;
+    text-align: center;
+  }
+
+  .navItemSearch div input{
+    width: 100%;
+  }
+
+  .formComment,
+  .containerComments{
+  width: 75%;
+}
+
+  .imgCardHome{
+    width: 13.125rem;
+    height: 15.625rem;
+  }
+}
+
+
+@media all and (min-width:992px){
+  .btnNav{
+    width: 75%;
+  }
+}
+
+@media all and (min-width:1200px){
+  #opcionesMenu ul{
+    flex-wrap: nowrap;
+  }
+
+  .btnNav{
+    width: initial;
+  }
+
+  .navItemSearch div{
+    width: 25rem;
+    text-align: center;
+  }
+}

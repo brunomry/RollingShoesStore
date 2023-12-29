@@ -1,0 +1,9 @@
+.linkRecoverPassword:hover,
+.linkRegister:hover{
+  text-decoration: underline;
+}
+
+.login{
+  width: 380px;
+  height: 625px;
+}

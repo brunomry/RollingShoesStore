@@ -1,0 +1,44 @@
+footer {
+  height: 30%;
+  background-color: var(--bg-footer);
+  text-align: center;
+  color: #fff;
+}
+
+footer h4 {
+  color: var(--text-titleFooter);
+}
+
+.footerContainer img {  
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.informationLinks { 
+  display: flex;
+  flex-direction: column;
+}
+
+.informationLinks a {
+  padding-top: 0.5rem;
+  color: #fff;
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.informationLinks a:hover {
+  text-decoration: underline;
+}

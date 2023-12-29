@@ -1,0 +1,53 @@
+.carouselHome{
+  margin-top: 8.5rem;
+}
+
+.btnWppFixed{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.titleHome{
+  color: var(--color-primary);
+}
+
+#carousel img {
+  object-fit: fill;
+}
+
+.card img {
+  height: 12rem;
+  object-fit: cover;
+}
+
+.showMoreButton {
+  text-align: center;
+}
+
+.titles {
+  text-align: center;
+}
+
+.advertisingContainer {
+  height: 15.625rem;
+  width: 100%;
+}
+
+.linkAdvertising {
+  width: 50%;
+  height: 40%;
+  margin-top: 10rem;
+  border-radius: 10px;
+}
+
+.linkAdvertising img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.imgCardHome{
+  width: 14.0625rem;
+  height: 15.625rem;
+}

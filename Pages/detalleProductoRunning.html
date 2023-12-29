@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aquí encontrarás el detalle del producto que hayas seleccionado, con la opción de agregarlo a tu carrito de compras o realizar la compra de forma directa. También podrás realizar comentarios con respecto al mismo."
+    />
+    <meta
+      name="keywords"
+      content="Detalle de producto, Comprar calzados en línea, Tienda de calzados, Cantidad de productos, Comentarios, Redes sociales, Medios de pago, Categoría de productos, Running, Rolling Shoes Store"
+    />
+    <meta
+      name="author"
+      content="Bruno Madozzo Romay, Leonel Rodrigo Cordero, Javier Exequiel Jiménez, Jeremias Romero, Leonel Lautaro Ramella"
+    />
+    <title>Calzado - Running | Rolling Shoes Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="../Imágenes/logo/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/detalleProducto.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/mediaQueries.css">
+    <script src="https://kit.fontawesome.com/166a168cfc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-md">
+        <div
+          class="container-fluid d-flex justify-content-between"
+        >
+          <div>
+            <a href="../index.html"
+              ><img
+                class="logoNav"
+                src="../Imágenes/Logo/logo.png"
+                alt="Logo de la tienda"
+              />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#opcionesMenu"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-xl-end flex-wrap"
+            id="opcionesMenu"
+          >
+            <ul
+              class="navbar-nav d-flex flex-xl-row  text-center justify-content-center mt-md-2 mt-lg-0"
+            >
+              <li class="nav-item mt-2 text-center">
+                <a
+                  href="../index.html"
+                  class="px-3 text-decoration-none fw-bold fs-4 navLink"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item mt-2 text-center">
+                <a
+                  href="contacto.html"
+                  class="px-3 text-decoration-none fw-bold fs-4 navLink"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item mt-2 text-center">
+                <a
+                  href="nosotros.html"
+                  class="px-3 text-decoration-none fw-bold fs-4 navLink"
+                  >Nosotros</a
+                >
+              </li>
+              <li
+                class="nav-item w-100 text-start text-sm-center navItemSearch"
+              >
+                <div class="input-group my-2 mt-md-4 mt-lg-2 mx-auto">
+                  <form class="d-flex formSearch px-xxl-3" role="search">
+                    <div class="input-group text-center text-sm-center">
+                      <input
+                        class="form-control pe-0 fs-5"
+                        type="search"
+                        placeholder="¿Qué estás buscando?"
+                        aria-label="Search"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li class="d-md-none">
+                <div
+                  class="d-flex flex-column justify-content-center"
+                  id="#opcionesMenu"
+                >
+                  <div>
+                    <a href="./Pages/detalleCarrito.html" class="ms-3"
+                      ><i
+                        class="fa-solid fa-cart-shopping fs-2 mt-2 me-2 iconCart "
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="text-xl-end">
+                    <div class="d-flex flex-column flex-lg-row align-items-center">
+                      <a
+                        href="iniciarSesion.html"
+                        class="btn btn-primary mt-2 text-dark fw-bold fs-5 btnNav mx-0 px-0 ms-3"
+                        >Iniciar sesión</a
+                      >
+                      <a
+                        href="registro.html"
+                        class="btn btn-primary mt-2 text-dark fw-bold fs-5 btnNav mx-0 px-0 ms-3"
+                        >Registrarme</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="collapse navbar-collapse d-none d-md-flex flex-md-row justify-content-center justify-content-lg-end"
+            id="#opcionesMenu"
+          >
+            <div>
+              <a href="detalleCarrito.html"
+                ><i
+                  class="fa-solid fa-cart-shopping fs-2 mt-2 me-2 iconCart"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <div class="d-flex flex-column flex-md-row flex-wrap">
+                <a
+                  href="iniciarSesion.html"
+                  class="btn btn-primary mt-2 text-dark fw-bold fs-5 btnNav me-0 me-xl-2"
+                  >Iniciar sesión</a
+                >
+                <a
+                  href="registro.html"
+                  class="btn btn-primary mt-2 text-dark fw-bold fs-5 btnNav"
+                  >Registrarme</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container py-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item">
+              <a href="detalleCategoriaRunning.html">Running</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Zapatillas Nike Air Max Excee
+            </li>
+          </ol>
+        </nav>
+        <div class="row">
+          <article class="col-md-6 mt-md-5 mt-lg-0">
+            <div id="carouselProductDetail" class="carousel slide border">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselProductDetail"
+                  data-bs-slide-to="0"
+                  class="bg-dark active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselProductDetail"
+                  data-bs-slide-to="1"
+                  class="bg-dark"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselProductDetail"
+                  data-bs-slide-to="2"
+                  class="bg-dark"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div
+                  class="carousel-item active d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="../Imágenes/DetalleProductoRunning/Running/Zapatillas Nike Air Max Excee.jpg"
+                    class="d-block w-100 h-100 img-fluid"
+                    alt="Zapatillas Nike Air Max Excee"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../Imágenes/DetalleProductoRunning/Running/Zapatillas Nike Air Max Excee (1).jpg"
+                    class="d-block w-100 img-fluid"
+                    alt="Zapatillas Nike Air Max Excee 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../Imágenes/DetalleProductoRunning/Running/Zapatillas Nike Air Max Excee (3).jpg"
+                    class="d-block w-100 img-fluid"
+                    alt="Zapatillas Nike Air Max Excee 1"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProductDetail"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProductDetail"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </article>
+          <article class="col-md-6 mt-4 mt-md-0 mt-xl-5">
+            <div>
+              <h2 class="fw-bold">Zapatillas Nike Air Max Excee</h2>
+              <hr />
+              <p class="text-danger fw-bold fs-5">$60.399</p>
+              <a href="error404.html">Ver medios de pago</a>
+              <p class="mt-4 fw-bold mb-0">Descripción</p>
+              <p>
+                Lucí con estilo en tus entrenamientos o en tu día a día, con las
+                Zapatillas Nike Air Max Excee. Confeccionada con materiales
+                sintéticos de alta calidad que te aseguran su resistencia y
+                durabilidad en cada uso. Además, la tecnología Air max te brinda
+                mejores y amortiguadas pisadas que te harán sentir seguro y
+                confiado en cualquier momento que las lleves puestas.
+              </p>
+              <div class="d-flex flex-column flex-xl-row column-gap-4 gap-xl-4">
+                <div class="form-check-label mb-2 mb-0">
+                  <label for="cantRunning">Cantidad:</label>
+                  <input
+                    type="number"
+                    class="form-check-input ps-2 m-0 inputQuantityProductDetail"
+                    id="cantRunning"
+                    value="0"
+                    min="1"
+                    max="20"
+                  />
+                </div>
+                <div class="d-flex">
+                  <label for="talle" class="form-label me-2">Talle:</label>
+                  <select class="form-select selectTalle" id="talle">
+                    <option value="1">seleccione</option>
+                    <option value="" disabled>35</option>
+                    <option value="">36</option>
+                    <option value="">37</option>
+                    <option value="">38</option>
+                    <option value="" disabled>39</option>
+                    <option value="">40</option>
+                    <option value="" disabled>41</option>
+                    <option value="">42</option>
+                    <option value="">43</option>
+                    <option value="">44</option>
+                  </select>
+                </div>
+              </div>
+              <a
+                href="detalleCarrito.html"
+                class="btn mt-4 mb-lg-5 btnAddCart text-white me-2"
+                >+ Agregar al carrito</a
+              >
+              <a
+                href="detalleCarrito.html"
+                class="btn mt-4 mt-lg-4 mb-lg-5 btn-success"
+                >Comprar ahora</a
+              >
+              <hr class="mb-2" />
+              <div class="d-flex justify-content-between">
+                <span class="fw-bold">Compartir</span>
+                <div class="d-flex gap-4">
+                  <a href="error404.html"
+                    ><i class="fa-brands fa-facebook fs-3"></i
+                  ></a>
+                  <a href="error404.html"
+                    ><i class="fa-brands fa-instagram text-danger fs-3"></i
+                  ></a>
+                  <a href="error404.html"
+                    ><i class="fa-brands fa-whatsapp text-success fs-3"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 pt-5 px-2">
+            <h3 class="text-center fw-bold">Comentarios</h3>
+            <hr />
+            <p class="mt-4 fw-bold fs-5 ms-xl-5">Deja un comentario</p>
+            <div class="d-flex flex-column align-items-center">
+              <form class="formComment">
+                <div class="input-group">
+                  <label for="commentProduct" class="form-label me-2"
+                    >Comentario:</label
+                  >
+                  <textarea
+                    class="form-text w-100 textAreaCommentProduct ps-2"
+                    minlength="25"
+                    maxlength="500"
+                    placeholder="Deja tu comentario aquí"
+                    required
+                  ></textarea>
+                  <p class="d-block w-100">
+                    *Para comentar primero debes iniciar sesión en tu cuenta
+                  </p>
+                </div>
+                <div class="text-end">
+                  <input
+                    type="submit"
+                    class="btn border border-black ms-auto btnComment"
+                    value="Publicar comentario"
+                  />
+                </div>
+              </form>
+              <div class="rounded mt-5 py-5 containerComments">
+                <div class="d-flex gap-1 gap-md-4 mb-4 rounded-5 bg-light">
+                  <div>
+                    <img
+                      src="../Imágenes/DetalleProductoRunning/Comentarios/messi.jpeg"
+                      class="rounded-circle border imgProfile"
+                      alt="usuario messi"
+                    />
+                  </div>
+                  <div class="w-100 comment">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-bold">leoMessi</span>
+                      <span class="text-end">hace 1 hora</span>
+                    </div>
+                    <p class="mb-0">
+                      Hola! A anto le encantaron la zapatillas! Ahora se va
+                      corre, yo me voy a juga al fulbo.
+                    </p>
+                    <div class="d-flex gap-3">
+                      <button
+                        class="border-0 text-primary btnReaction px-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalProductDetail"
+                      >
+                        Me gusta
+                      </button>
+                      <button
+                        class="border-0 text-primary btnReaction px-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalProductDetail"
+                      >
+                        Responder
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex gap-1 gap-md-4 mb-4 rounded-5 bg-light">
+                  <div>
+                    <img
+                      src="../Imágenes/DetalleProductoRunning/Comentarios/beltran.jpeg"
+                      class="rounded-circle border imgProfile"
+                      alt="usuario more beltran"
+                    />
+                  </div>
+                  <div class="w-100">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-bold">morebeltran</span>
+                      <span class="text-end">hace 4 días</span>
+                    </div>
+                    <p class="mb-0">Muy buenas las zapatillas!</p>
+                    <div class="d-flex gap-3">
+                      <button
+                        class="border-0 text-primary btnReaction px-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalProductDetail"
+                      >
+                        Me gusta
+                      </button>
+                      <button
+                        class="border-0 text-primary btnReaction px-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalProductDetail"
+                      >
+                        Responder
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex gap-1 gap-md-4 mb-4 rounded-5 bg-light">
+                  <div>
+                    <img
+                      src="../Imágenes/DetalleProductoRunning/Comentarios/basile.jpg"
+                      class="rounded-circle border imgProfile"
+                      alt="usuario coco basile"
+                    />
+                  </div>
+                  <div class="w-100">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-bold">cocoBasile</span>
+                      <span class="text-end">hace 1 semana</span>
+                    </div>
+                    <p class="mb-0">
+                      Hola muchachos! A mi mujer le gustaron las zapatillas.
+                      Cuando quieran me llaman y nos tomamos un Blue label.
+                    </p>
+                    <div class="d-flex gap-3">
+                      <button
+                        class="border-0 text-primary btnReaction px-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalProductDetail"
+                      >
+                        Me gusta
+                      </button>
+                      <button
+                        class="border-0 text-primary btnReaction px-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalProductDetail"
+                      >
+                        Responder
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-lg-3 footerContainer">
+            <img class="m-3" src="../Imágenes/logo/logo.png" alt="Logo" />
+          </div>
+          <div class="col-md-4 col-lg-3 pt-3 pt-md-3 pt-lg-5">
+            <h4 class="mb-3">Información</h4>
+            <div class="informationLinks">
+              <ul class="list-unstyled">
+                <li><a href="error404.html">Medios de pago</a></li>
+                <li>
+                  <a href="error404.html">Preguntas frecuentes</a>
+                </li>
+                <li>
+                  <a href="error404.html">Términos y condiciones</a>
+                </li>
+                <li>
+                  <a href="error404.html">Cambio y/o devolución</a>
+                </li>
+                <li>
+                  <a href="error404.html">Envíos a domicilio</a>
+                </li>
+                <li>
+                  <a href="error404.html">Retiros en sucursal</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 pt-5 pt-md-3 pt-lg-5">
+            <h4 class="mb-3">Contacto</h4>
+            <div id="footerContact">
+              <p>Horarios de atención:</p>
+              <p>Lunes a Sábados</p>
+              <p>9hs a 13hs | 17hs a 21hs</p>
+              <p>
+                <i class="fa-regular fa-envelope fs-4 text-info"></i>
+                rollingshoesstore@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone fs-4 text-success"></i> 38155544455</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 pt-5 pt-md-3 pt-lg-5">
+            <h4 class="mb-3">Seguinos en nuestras redes</h4>
+            <a
+              href="error404.html"
+              target="_blank"
+              class="text-white"
+              ><i class="fa-brands fa-facebook fs-2 mx-1 text-primary"></i
+            ></a>
+            <a
+              href="error404.html"
+              target="_blank"
+              class="text-white"
+              ><i class="fa-brands fa-instagram fs-2 mx-1 text-danger"></i>
+            </a>
+            <a href="error404.html" target="_blank" class="text-white"
+              ><i class="fa-brands fa-x-twitter fs-2 mx-1"></i>
+            </a>
+            <a
+              href="error404.html"
+              target="_blank"
+              class="text-white"
+              ><i class="fa-brands fa-whatsapp fs-2 mx-1 text-success"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="pt-5 pb-2">
+        &copy; RollingCodeSchool 2023 - Todos los derechos reservados
+      </p>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalProductDetail"
+      tabindex="-1"
+      aria-labelledby="modalProductDetailLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modalDialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <span class="fw-bold fs-5">No iniciaste sesión.</span>
+            <a href="login.html" class="fs-5">Inicia sesión</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
