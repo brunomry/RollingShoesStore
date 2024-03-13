@@ -2,12 +2,6 @@
   margin-top: 8.5rem;
 }
 
-.btnWppFixed{
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-}
-
 .titleHome{
   color: var(--color-primary);
 }

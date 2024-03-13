@@ -48,3 +48,9 @@ main{
   flex-grow: 1;
   background-color: var(--bg-main);
 }
+
+.btnWppFixed{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
