@@ -1,6 +1,15 @@
 .navbar{
   background:var(--bg-navbarMajor);
-  height: 120px;
+  height: 130px;
+}
+
+.navbar-collapse{
+  background:var(--bg-navbarMajor);
+
+}
+
+.navbar-nav li{
+ width: 100%;
 }
 
 .logoNav{
@@ -20,13 +29,19 @@
   cursor: pointer;
 }
 
-.btnNav{
-  background-color: var(--color-primary);
-  border: none;
+.inputSearch{
+  background: #000000;
+  background: #171717;
+  border:1px solid gray;
 }
 
-.btnNav:hover{
-  background-color: var(--bg-hoverButtonsNav);
+.inputSearch::placeholder{
+  color: #dddcdc;
+}
+
+.inputSearch:focus{
+  background: #171717;
+  color: #fff;
 }
 
 .iconCart{
@@ -35,10 +50,6 @@
 
 .iconCart:hover{
   color:var(--bg-light-dark);
-}
-
-.btnNav{
-  width: 50%;
 }
 
 .navItemSearch{

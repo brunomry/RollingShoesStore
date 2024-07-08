@@ -38,8 +38,8 @@
   </head>
   <body>
     <header class="fixed-top">
-      <nav class="navbar navbar-expand-md">
-        <div class="container-fluid d-flex justify-content-between">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid px-0 px-xl-2 d-flex justify-content-between">
           <div>
             <a href="index.html"
               ><img
@@ -50,115 +50,86 @@
             </a>
           </div>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler text-white border-1 border border-secondary"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#opcionesMenu"
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" 
+            aria-expanded="false"
           >
             <span class="navbar-toggler-icon"> </span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-xl-end flex-wrap"
-            id="opcionesMenu"
+            class="collapse navbar-collapse d-flex justify-content-center justify-content-xl-end justify-content-xxl-end mt-0 pt-0"
+            id="navbarNav"
           >
             <ul
-              class="navbar-nav d-flex flex-xl-row text-center justify-content-center mt-md-2 mt-lg-0"
+              class="w-100 navbar-nav list-unstyled d-xl-flex align-items-center flex-xl-row text-center justify-content-xxl-center pb-3 pb-xl-0  mt-md-2 gap-2 gap-md-3"
+              id="navbarNav"
             >
-              <li class="nav-item mt-2 text-center">
+              <li class="nav-item text-center">
                 <a
                   href="index.html"
-                  class="px-3 text-decoration-none fs-4 navLink"
+                  class="text-decoration-none navLink d-block"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item mt-2 text-center">
+              <li class="nav-item text-center">
                 <a
                   href="./Pages/contacto.html"
-                  class="px-3 text-decoration-none fs-4 navLink"
+                  class="px-3 text-decoration-none navLink d-block"
                   >Contacto</a
                 >
               </li>
-              <li class="nav-item mt-2 text-center">
+              <li class="nav-item text-center">
                 <a
                   href="./Pages/nosotros.html"
-                  class="px-3 text-decoration-none fs-4 navLink"
+                  class="text-decoration-none navLink d-block"
                   >Nosotros</a
                 >
               </li>
               <li
-                class="nav-item w-100 text-start text-sm-center navItemSearch"
+                class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
               >
-                <div class="input-group my-2 mt-md-4 mt-lg-2 mx-auto">
-                  <form class="d-flex formSearch px-xxl-3" role="search">
+
+                  <form class="d-flex formSearch justify-content-center " role="search">
                     <div class="input-group text-center text-sm-center">
                       <input
-                        class="form-control pe-0 fs-5 rounded-0"
+                        class="form-control rounded-0 inputSearch"
                         type="search"
                         placeholder="¿Qué estás buscando?"
                         aria-label="Search"
                       />
                     </div>
                   </form>
-                </div>
+           
               </li>
-              <li class="d-md-none">
-                <div
-                  class="d-flex flex-column justify-content-center"
-                  id="#opcionesMenu"
-                >
-                  <div>
-                    <a href="./Pages/detalleCarrito.html" class="ms-3"
+              <li class="nav-item">
+                    <a href="./Pages/detalleCarrito.html" class=""
                       ><i
-                        class="fa-solid fa-cart-shopping fs-2 mt-2 me-2 iconCart"
+                        class="fa-solid fa-cart-shopping fs-4 iconCart"
                       ></i
                     ></a>
-                  </div>
-                  <div class="text-xl-end">
-                    <div
-                      class="d-flex flex-column flex-lg-row align-items-center"
-                    >
+                    <li class="nav-item">
                       <a
-                        href="./Pages/iniciarSesion.html"
-                        class="btn btn-primary mt-2 text-dark fs-5 btnNav mx-0 rounded-0 px-0 ms-3"
-                        >Iniciar sesión</a
-                      >
+                      href="./Pages/iniciarSesion.html"
+                      class="btn px-4 text-white border-1 border border-secondary btn-outline-dark rounded-0"
+                      >Iniciar sesión</a
+                    >
+                    </li>
+                     
+                    <li class="nav-item">
                       <a
                         href="./Pages/registro.html"
-                        class="btn border-1 border-white mt-2 text-dark fs-5 rounded-0 mx-0 px-0 ms-3"
+                        class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
                         >Registrarme</a
                       >
-                    </div>
+                      </li>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
-          <div
-            class="collapse navbar-collapse d-none d-md-flex flex-md-row justify-content-center justify-content-lg-end"
-            id="#opcionesMenu"
-          >
-            <div>
-              <a href="./Pages/detalleCarrito.html"
-                ><i
-                  class="fa-solid fa-cart-shopping fs-2 mt-2 me-2 iconCart"
-                ></i
-              ></a>
-            </div>
-            <div>
-              <div class="d-flex flex-column flex-md-row flex-wrap">
-                <a
-                  href="./Pages/iniciarSesion.html"
-                  class="btn btn-outline-dark  mt-2 text-white border-1 border fs-5 rounded-0 me-0 me-xl-2"
-                  >Iniciar sesión</a
-                >
-                <a
-                  href="./Pages/registro.html"
-                  class="btn btn-outline-dark  mt-2 text-white border-1 border rounded-0 fs-5"
-                  >Registrarme</a
-                >
-              </div>
-            </div>
-          </div>
+          
         </div>
       </nav>
     </header>
@@ -257,6 +228,22 @@
           <h2 class="text-center fw-bold">
             ¡Tu tienda de calzados favoritos!
           </h2>
+          <div
+                class="d-xl-none my-4 px-md-5"
+              >
+
+                  <form class="d-flex formSearch justify-content-center" role="search">
+                    <div class="input-group text-center text-sm-center">
+                      <input
+                        class="form-control rounded-0 "
+                        type="search"
+                        placeholder="¿Qué estás buscando?"
+                        aria-label="Search"
+                      />
+                    </div>
+                  </form>
+           
+              </div>
           <h2 class="text-center pt-4 pt-md-5 pb-3 m-0 fw-bold">Últimos visitados</h2>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
             <a class="cardc cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/detalleProductoRunning.html">

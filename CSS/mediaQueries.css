@@ -14,10 +14,6 @@
 }
 
 @media all and (min-width:768px){
-  #opcionesMenu ul{
-    flex-wrap: wrap;
-  }
-
   .btnNav{
     width: 95%;
     margin-right: 5px;
@@ -63,10 +59,6 @@
 }
 
 @media all and (min-width:1200px){
-  #opcionesMenu ul{
-    flex-wrap: nowrap;
-  }
-
   .btnNav{
     width: initial;
   }
@@ -79,4 +71,10 @@
   .cardProduct{
     height: 310px;
   }
+}
+
+@media all and (min-width:1400px){
+  .navbar-nav li{
+    width: initial;
+   }
 }
