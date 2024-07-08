@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="./CSS/mediaQueries.css">
   </head>
   <body>
-    <header class="fixed-top mb-5">
+    <header class="fixed-top">
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid d-flex justify-content-between">
           <div>
@@ -67,21 +67,21 @@
               <li class="nav-item mt-2 text-center">
                 <a
                   href="index.html"
-                  class="px-3 text-decoration-none fw-bold fs-4 navLink"
+                  class="px-3 text-decoration-none fs-4 navLink"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item mt-2 text-center">
                 <a
                   href="./Pages/contacto.html"
-                  class="px-3 text-decoration-none fw-bold fs-4 navLink"
+                  class="px-3 text-decoration-none fs-4 navLink"
                   >Contacto</a
                 >
               </li>
               <li class="nav-item mt-2 text-center">
                 <a
                   href="./Pages/nosotros.html"
-                  class="px-3 text-decoration-none fw-bold fs-4 navLink"
+                  class="px-3 text-decoration-none fs-4 navLink"
                   >Nosotros</a
                 >
               </li>
@@ -92,7 +92,7 @@
                   <form class="d-flex formSearch px-xxl-3" role="search">
                     <div class="input-group text-center text-sm-center">
                       <input
-                        class="form-control pe-0 fs-5"
+                        class="form-control pe-0 fs-5 rounded-0"
                         type="search"
                         placeholder="¿Qué estás buscando?"
                         aria-label="Search"
@@ -119,12 +119,12 @@
                     >
                       <a
                         href="./Pages/iniciarSesion.html"
-                        class="btn btn-primary mt-2 text-dark fw-bold fs-5 btnNav mx-0 px-0 ms-3"
+                        class="btn btn-primary mt-2 text-dark fs-5 btnNav mx-0 rounded-0 px-0 ms-3"
                         >Iniciar sesión</a
                       >
                       <a
                         href="./Pages/registro.html"
-                        class="btn btn-primary mt-2 text-dark fw-bold fs-5 btnNav mx-0 px-0 ms-3"
+                        class="btn border-1 border-white mt-2 text-dark fs-5 rounded-0 mx-0 px-0 ms-3"
                         >Registrarme</a
                       >
                     </div>
@@ -148,12 +148,12 @@
               <div class="d-flex flex-column flex-md-row flex-wrap">
                 <a
                   href="./Pages/iniciarSesion.html"
-                  class="btn btn-primary mt-2 text-dark fw-bold fs-5 btnNav me-0 me-xl-2"
+                  class="btn btn-outline-dark  mt-2 text-white border-1 border fs-5 rounded-0 me-0 me-xl-2"
                   >Iniciar sesión</a
                 >
                 <a
                   href="./Pages/registro.html"
-                  class="btn btn-primary mt-2 text-dark fw-bold fs-5 btnNav"
+                  class="btn btn-outline-dark  mt-2 text-white border-1 border rounded-0 fs-5"
                   >Registrarme</a
                 >
               </div>
@@ -249,198 +249,147 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <section class="container pt-5" id="sectionPrincipal">
+      <section class="container pt-3" id="sectionPrincipal">
         <div class="row d-flex justify-content-center">
-          <h1 class="text-center fw-bold mt-5">
-            Bienvenido a <span class="titleHome">Rolling Shoes Store</span>
+          <h1 class="text-center fw-bold mt-3 titleHome">
+            Rolling Shoes Store
           </h1>
-          <h2 class="text-center fw-bold pb-5">
+          <h2 class="text-center fw-bold">
             ¡Tu tienda de calzados favoritos!
           </h2>
-          <h3 class="text-center pt-5 pb-3 m-0 fw-bold">Últimos visitados</h3>
+          <h2 class="text-center pt-4 pt-md-5 pb-3 m-0 fw-bold">Últimos visitados</h2>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="cardc cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/detalleProductoRunning.html">
                 <img
                   src="./Imágenes/DetalleProductoRunning/Running/Zapatillas Nike Air Max Excee (3).jpg"
                   alt="Zapatillas Nike Air Max Excee"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$60.399</p>
-                <p class="fw-bold">Zapatillas Nike Air Max Excee</p>
-              </div>
-              <div class="card-footer text-center">
+                <p class="fs-4 text-danger mb-0">$60.399</p>
+                <p class="px-2 text-dark">Zapatillas Nike Air Max Excee</p>
                 <a
-                  class="btn btn-primary"
+                  class="px-0 py-3 btnSeeMore"
                   href="./Pages/detalleProductoRunning.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/detalleProductoModa.html">
                 <img
                   src="./Imágenes/DetalleProductoModa/Moda/zapatillas-puma-shuffle.jpg"
                   alt="Zapatillas Puma Shuffle"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$41.999</p>
-                <p class="fw-bold">Zapatillas Puma Shuffle</p>
-              </div>
-              <div class="card-footer text-center">
+                <p class="fs-4 text-danger mb-0">$41.999</p>
+                <p class="px-2">Zapatillas Puma Shuffle</p>
                 <a
-                  class="btn btn-primary"
+                  class="px-0 py-3 btnSeeMore"
                   href="./Pages/detalleProductoModa.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/Futbol/NIDA1174-705-1.JPG"
                   alt="Botines Fútbol Nike Legend 9 Academy Fg Unisex"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$53.999</p>
-                <p class="fw-bold">
+                <p class="fs-4 text-danger mb-0">$53.999</p>
+                <p class="px-2">
                   Botines Fútbol Nike Legend 9 Academy Fg Unisex
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="smDivices mdDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">             
                 <img
                   src="./Imágenes/Principal/moda/moda6_Zapatillas Nike Court Vision Mid Winter Hombre.jpg"
                   alt="Zapatillas Nike Court Vision Mid Winter Hombre"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$71.399</p>
-                <p class="fw-bold">
+                <p class="fs-4 text-danger mb-0">$71.399</p>
+                <p class="px-2">
                   Zapatillas Nike Court Vision Mid Winter Hombre
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
-                  >Ver más</a
-                >
-              </div>
-            </div>
+                </p>        
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
+                  >Ver más</a>  
+            </a>
           </article>
         </div>
         <div class="row d-flex justify-content-center" id="moda">
-          <h3 class="text-center pt-5 pb-3 m-0 fw-bold">Moda</h3>
+          <h2 class="text-center pt-4 pb-3 m-0 fw-bold">Moda</h2>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/moda/moda5_Zapatillas Nike Air Force 1 07 Mujer.jpg"
                   alt="Zapatillas Nike Air Force 1 07 Mujer.jpg"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$83.999</p>
-                <p class="fw-bold">Zapatillas Nike Air Force 1 07 Mujer</p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <p class="fs-4 text-danger mb-0">$83.999</p>
+                <p class="px-2">Zapatillas Nike Air Force 1 07 Mujer</p>
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+          </a>
           </article>
           <article class="smDivices col-lg-3 col-sm-6 col-md-4 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/moda/moda6_Zapatillas Nike Court Vision Mid Winter Hombre.jpg"
                   alt="Zapatillas Nike Court Vision Mid Winter Hombre"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$71.399</p>
-                <p class="fw-bold">
+                <p class="fs-4 mb-0 text-danger">$71.399</p>
+                <p class="px-2">
                   Zapatillas Nike Court Vision Mid Winter Hombre
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/detalleProductoModa.html">
                 <img
                   src="./Imágenes/Principal/moda/moda8_zapatillas-puma-shuffle.jpg"
                   alt="zapatillas-puma-shuffle"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$41.999</p>
-                <p class="fw-bold">Zapatillas Puma Shuffle</p>
-              </div>
-              <div class="card-footer text-center">
+                <p class="fs-4 mb-0 text-danger">$41.999</p>
+                <p class="px-2">Zapatillas Puma Shuffle</p>
                 <a
-                  class="btn btn-primary"
+                  class="px-0 py-3 btnSeeMore"
                   href="./Pages/detalleProductoModa.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="mdDivices smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/moda/moda7_Zapatillas Puma Rebound Layup para niños.jpg"
                   alt="Zapatillas Puma Rebound Layup para niños"
-                  class="card-img-top"
+                  class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$44.999</p>
-                <p class="fw-bold">Zapatillas Puma Rebound Layup para niños</p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <p class="fs-4 mb-0 text-danger">$44.999</p>
+                <p class="px-2">Zapatillas Puma Rebound Layup para niños</p>
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="col-lg-12">
-            <div class="showMoreButton py-5">
+            <div class="text-center py-3 pb-5">
               <a
-                class="btn btn-outline-success"
+                class="btn btnSeeMoreCategory rounded-0 px-5 py-3"
                 href="./pages/detalleCategoriaModa.html"
-                >Ver más de Moda</a
+                >Más de Moda...</a
               >
             </div>
           </article>
@@ -452,96 +401,73 @@
           </article>
         </div>
         <div class="row d-flex justify-content-center" id="futbol">
-          <h3 class="text-center pt-5 pb-3 m-0 fw-bold">Fútbol</h3>
+          <h2 class="text-center pt-4 pb-3 m-0 fw-bold">Fútbol</h2>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/Futbol/AD_GW8503-1.JPG"
                   alt="Botines adidas X Speedportal"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$31.999</p>
-                <p class="fw-bold">Botines adidas X Speedportal</p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <p class="fs-4 mb-0 text-danger">$31.999</p>
+                <p class="px-2">Botines adidas X Speedportal</p>
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/Futbol/PU107645-01-1.JPG"
                   alt="Botines Fútbol Puma Ultra Play Hombre"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$50.999</p>
-                <p class="fw-bold">Botines Fútbol Puma Ultra Play Hombre</p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <p class="fs-4 mb-0 text-danger">$50.999</p>
+                <p class="px-2">Botines Fútbol Puma Ultra Play Hombre</p>
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/Futbol/NIDA1174-705-1.JPG"
                   alt="Botines Fútbol Nike Legend 9 Academy Fg Unisex"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$53.999</p>
-                <p class="fw-bold">
+                <p class="fs-4 mb-0 text-danger">$53.999</p>
+                <p class="px-2">
                   Botines Fútbol Nike Legend 9 Academy Fg Unisex
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="mdDivices smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/Futbol/UBU01FB051-801-1.JPG"
                   alt="Botines Fútbol Umbro Cosmic Sintético Hombre"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$16.799</p>
-                <p class="fw-bold">
+                <p class="fs-4 mb-0 text-danger">$16.799</p>
+                <p class="px-2">
                   Botines Fútbol Umbro Cosmic Sintético Hombre
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="col-lg-12">
-            <div class="showMoreButton py-5">
-              <a class="btn btn-outline-success" href="./Pages/error404.html"
-                >Ver más de Fútbol</a
+            <div class="text-center py-3 pb-5">
+              <a
+                class="btn btnSeeMoreCategory rounded-0 px-5 py-3"
+                href="./pages/detalleCategoriaModa.html"
+                >Más de Fútbol...</a
               >
             </div>
           </article>
@@ -553,95 +479,72 @@
           </article>
         </div>
         <div class="row d-flex justify-content-center" id="running">
-          <h3 class="text-center pt-5 pb-3 m-0 fw-bold">Running</h3>
+          <h2 class="text-center pt-4 pb-3 m-0 fw-bold">Running</h2>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/running/running2_Zapatillas Nike Air Max Excee.jpg"
                   alt="Zapatillas Nike Air Max Excee"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$60.399</p>
-                <p class="fw-bold">Zapatillas Nike Air Max Excee</p>
-              </div>
-              <div class="card-footer text-center">
+                <p class="fs-4 mb-0 text-danger">$60.399</p>
+                <p class="px-2">Zapatillas Nike Air Max Excee</p>
                 <a
-                  class="btn btn-primary"
+                  class="px-0 py-3 btnSeeMore
+                  "
                   href="./Pages/detalleProductoRunning.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/running/running5_Zapatillas Topper Candun.jpg"
                   alt="Zapatillas Topper Candun"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$83.999</p>
-                <p class="fw-bold">Zapatillas Nike Air Force 1 07 Mujer</p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <p class="fs-4 mb-0 text-danger">$83.999</p>
+                <p class="px-2">Zapatillas Nike Air Force 1 07 Mujer</p>
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/running/running8_Zapatillas Básquet Under Armour Curry 10 Northern Lights Unisex.jpg"
                   alt="Zapatillas Básquet Under Armour Curry 10 Northern Lights Unisex"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$41.999</p>
-                <p class="fw-bold">Zapatillas Puma Shuffle</p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <p class="fs-4 mb-0 text-danger">$41.999</p>
+                <p class="px-2">Zapatillas Puma Shuffle</p>
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="mdDivices smDivices col-lg-3 col-md-4 col-sm-6 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./Pages/error404.html">
                 <img
                   src="./Imágenes/Principal/running/running12_Zapatillas Nike Revolution 6 Next Nature.jpg"
                   alt="Zapatillas Nike Revolution 6 Next Nature"
                   class="card-img-top imgCardHome"
                 />
-              </div>
-              <div class="card-body">
-                <p class="fs-3 fw-bold text-danger">$43.999</p>
-                <p class="fw-bold">Zapatillas Nike Revolution 6 Next Nature</p>
-              </div>
-              <div class="card-footer text-center">
-                <a class="btn btn-primary" href="./Pages/error404.html"
+                <p class="fs-4 mb-0 text-danger">$43.999</p>
+                <p class="px-2">Zapatillas Nike Revolution 6 Next Nature</p>
+                <a class="px-0 py-3 btnSeeMore" href="./Pages/error404.html"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </article>
           <article class="col-lg-12">
-            <div class="showMoreButton py-5">
+            <div class="text-center py-3 pb-5">
               <a
-                class="btn btn-outline-success"
-                href="./Pages/detalleCategoriaRunning.html"
-                >Ver más de Running</a
+                class="btn btnSeeMoreCategory rounded-0 px-5 py-3"
+                href="./pages/detalleCategoriaModa.html"
+                >Más de Running...</a
               >
             </div>
           </article>

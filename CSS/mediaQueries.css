@@ -42,16 +42,23 @@
   width: 75%;
 }
 
-  .imgCardHome{
-    width: 13.125rem;
-    height: 15.625rem;
-  }
+.cardProduct{
+  height: 280px;
+}
+
+.cardProduct .imgCardHome{
+  width:75%;
+}
 }
 
 
 @media all and (min-width:992px){
   .btnNav{
     width: 75%;
+  }
+
+  .cardProduct .imgCardHome{
+    width:75%;
   }
 }
 
@@ -67,5 +74,9 @@
   .navItemSearch div{
     width: 25rem;
     text-align: center;
+  }
+
+  .cardProduct{
+    height: 310px;
   }
 }

@@ -10,12 +10,40 @@
   object-fit: fill;
 }
 
-.card img {
-  height: 12rem;
+.cardProduct{
+  width: 100%;
+  background: #fff;
+  height: 300px;
+}
+
+.cardProduct .imgCardHome{
+  background: #fff;
+  width: 65%;
+  max-height: 12rem;
   object-fit: cover;
 }
 
-.showMoreButton {
+.btnSeeMore{
+  width: 100%;
+  display: block;
+  text-align: center;
+  background: #171717;
+  color: #fff;
+}
+
+.btnSeeMore:hover{
+  background: #000;
+}
+
+.btnSeeMoreCategory {
+  width: 250px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.btnSeeMoreCategory:hover {
+  background: #171717;
+  color: #fff;
   text-align: center;
 }
 
@@ -39,9 +67,4 @@
   object-fit: cover;
   height: 100%;
   border-radius: 10px;
-}
-
-.imgCardHome{
-  width: 14.0625rem;
-  height: 15.625rem;
 }

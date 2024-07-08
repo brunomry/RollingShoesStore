@@ -1,5 +1,6 @@
 .navbar{
   background:var(--bg-navbarMajor);
+  height: 120px;
 }
 
 .logoNav{
@@ -29,11 +30,11 @@
 }
 
 .iconCart{
-  color: var(--bg-light-dark);
+  color: #fff;
 }
 
 .iconCart:hover{
-  color: #000;
+  color:var(--bg-light-dark);
 }
 
 .btnNav{
