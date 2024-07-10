@@ -1,5 +1,5 @@
 :root{
-  --bg-navbarMajor:#171717;
+  --bg-dark:#171717;
   --text-hoverOptionsNav:#FC6B3F;
   --bg-hoverButtonsNav: #d46464;
   --bg-main: #FAFAFA;
@@ -59,4 +59,29 @@ main{
   position: fixed;
   right: 20px;
   bottom: 20px;
+}
+
+.cardProduct{
+  width: 100%;
+  background: #fff;
+  height: 300px;
+}
+
+.cardProduct .imgCardHome{
+  background: #fff;
+  width: 65%;
+  max-height: 12rem;
+  object-fit: cover;
+}
+
+.btnSeeMore{
+  width: 100%;
+  display: block;
+  text-align: center;
+  background: #171717;
+  color: #fff;
+}
+
+.btnSeeMore:hover{
+  background: #000;
 }

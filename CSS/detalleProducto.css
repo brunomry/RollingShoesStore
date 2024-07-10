@@ -11,11 +11,19 @@
 }
 
 .btnAddCart{
-  background: var(--bg-light-dark);
+  background: var(--bg-dark);
 }
 
 .btnAddCart:hover{
   background: #000;
+}
+
+.btnBuyNow{
+  background: #0caa51de;
+}
+
+.btnBuyNow:hover{
+  background: #017533;
 }
 
 .formComment,
@@ -27,6 +35,10 @@
   font-size: 1rem;
   height: 9.375rem;
   resize: none;
+}
+
+.textAreaCommentProduct:focus{
+  outline: none;
 }
 
 .btnComment:hover{

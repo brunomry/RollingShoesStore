@@ -1,10 +1,10 @@
 .navbar{
-  background:var(--bg-navbarMajor);
+  background:var(--bg-dark);
   height: 130px;
 }
 
 .navbar-collapse{
-  background:var(--bg-navbarMajor);
+  background:var(--bg-dark);
 
 }
 

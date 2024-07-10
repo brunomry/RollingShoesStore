@@ -47,7 +47,9 @@
   <body>
     <header class="sticky-top">
       <nav class="navbar navbar-expand-xl">
-        <div class="container-fluid px-0 px-xl-2 d-flex justify-content-between">
+        <div
+          class="container-fluid px-0 px-xl-2 d-flex justify-content-between"
+        >
           <div>
             <a href="../index.html"
               ><img
@@ -61,8 +63,8 @@
           <button
             class="navbar-toggler text-white border-1 border border-secondary"
             type="button"
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
             aria-expanded="false"
           >
             <span class="navbar-toggler-icon"> </span>
@@ -72,7 +74,7 @@
             id="navbarNav"
           >
             <ul
-              class="w-100 navbar-nav list-unstyled d-xl-flex align-items-center flex-xl-row text-center justify-content-xxl-center pb-3 pb-xl-0  mt-md-2 gap-2 gap-md-3"
+              class="w-100 navbar-nav list-unstyled d-xl-flex align-items-center flex-xl-row text-center justify-content-xxl-center pb-3 pb-xl-0 mt-md-2 gap-2 gap-md-3"
               id="navbarNav"
             >
               <li class="nav-item text-center">
@@ -99,46 +101,42 @@
               <li
                 class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
               >
-
-                  <form class="d-flex formSearch justify-content-center " role="search">
-                    <div class="input-group text-center text-sm-center">
-                      <input
-                        class="form-control rounded-0 inputSearch"
-                        type="search"
-                        placeholder="¿Qué estás buscando?"
-                        aria-label="Search"
-                      />
-                    </div>
-                  </form>
-           
-              </li>
-              <li class="nav-item">
-                    <a href="./detalleCarrito.html" class=""
-                      ><i
-                        class="fa-solid fa-cart-shopping fs-4 iconCart"
-                      ></i
-                    ></a>
-                    <li class="nav-item">
-                      <a
-                      href="./iniciarSesion.html"
-                      class="btn px-4 text-white border-1 border border-secondary btn-outline-dark rounded-0"
-                      >Iniciar sesión</a
-                    >
-                    </li>
-                     
-                    <li class="nav-item">
-                      <a
-                        href="./registro.html"
-                        class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
-                        >Registrarme</a
-                      >
-                      </li>
+                <form
+                  class="d-flex formSearch justify-content-center"
+                  role="search"
+                >
+                  <div class="input-group text-center text-sm-center">
+                    <input
+                      class="form-control rounded-0 inputSearch"
+                      type="search"
+                      placeholder="¿Qué estás buscando?"
+                      aria-label="Search"
+                    />
                   </div>
-                </div>
+                </form>
               </li>
+              <div class="d-flex flex-column mt-2 mt-xl-0 flex-xl-row gap-3 justify-content-center align-items-center">
+                <a href="./detalleCarrito.html" class=""
+                  ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
+                ></a>
+                <li class="nav-item">
+                  <a
+                    href="./iniciarSesion.html"
+                    class="btn px-4 text-white border-1 border border-secondary btn-outline-dark rounded-0"
+                    >Iniciar sesión</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    href="./registro.html"
+                    class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
+                    >Registrarme</a
+                  >
+                </li>
+              </div>
             </ul>
           </div>
-          
         </div>
       </nav>
     </header>
@@ -158,7 +156,7 @@
         <div class="filter">
           <div class="d-flex">
             <p class="p-3">Filtros</p>
-            <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion" >
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -259,244 +257,176 @@
             </div>
           </div>
         </div>
-        <article class="row mt-5 px-sm-0">
+        <article class="row mt-5 px-sm-0 gy-2">
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda1_Zapatillas Nike Air Max Sc.jpg"
-                class="card-img-top"
-                alt="adidas serie 1 imgCardCategory"
-                />
-              </div>             
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$60.599</h5>
-                <p class="card-text fw-bold">Zapatillas Nike Air Max Sc</p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="detalleProducto.html" class="btn btn-primary"
+                class="card-img-top imgCardHome"
+                alt="adidas serie 1"
+                />           
+                <p class="fs-4 text-danger mb-0">$60.599</p>
+                <p class="px-2">Zapatillas Nike Air Max Sc</p>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda2_Zapatillas Nike Revolution 6 Next Nature.jpg"
-                class="card-img-top imgCardCategory"
-                alt="adidas serie 1"
+                class="card-img-top imgCardHome"
+                alt="adidas serie 1 "
                 />
-              </div> 
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$43.999</h5>
-                <p class="card-text fw-bold">
+                <p class="fs-4 text-danger mb-0">$43.999</p>
+                <p class="px-2">
                   Zapatillas Nike Revolution 6 Next Nature
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda3_Zapatillas Nike Court Vision Lo Be.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
                 />
-              </div>             
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$49.499</h5>
-                <p class="card-text fw-bold">
+                <p class="text-danger fs-4 mb-0">$49.499</p>
+                <p class="px-2">
                   Zapatillas Nike Court Vision Lo Be
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore
+                ">Ver más</a>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda4_Zapatillas Nike Air Max Sc Hombre.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
                 />
-              </div>             
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$56.999</h5>
-                <p class="card-text fw-bold">
+                <p class="text-danger fs-4 mb-0">$56.999</p>
+                <p class="px-2">
                   Zapatillas Nike Air Max Sc Hombre
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda5_Zapatillas Nike Air Force 1 07 Mujer.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
                 />
-              </div>       
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$83.999</h5>
-                <p class="card-text fw-bold">
+                <p class="text-danger fs-3 mb-0">$83.999</p>
+                <p class="px-2">
                   Zapatillas Nike Air Force 1 07 Mujer
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda6_Zapatillas Nike Court Vision Mid Winter Hombre.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
                 />
-              </div>             
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$71.399</h5>
-                <p class="card-text fw-bold">
+                <p class="text-danger fs-4 mb-0">$71.399</p>
+                <p class="px-2">
                   Zapatillas Nike Court Vision Mid Winter Hombre
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda7_Zapatillas Puma Rebound Layup para niños.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
-                />
-              </div>        
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$44.999</h5>
-                <p class="card-text fw-bold">
+                />      
+                <p class="text-danger fs-4 mb-0">$44.999</p>
+                <p class="px-2">
                   Zapatillas Puma Rebound Layup para niños
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+              <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="detalleProductoModa.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda8_zapatillas-puma-shuffle.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
                 />
-              </div>             
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$41.999</h5>
-                <p class="card-text fw-bold">Zapatillas Puma Shuffle</p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="detalleProductoModa.html" class="btn btn-primary"
+                <p class="text-danger fs-4 mb-0">$41.999</p>
+                <p class="px-2">Zapatillas Puma Shuffle</p>
+                <a href="detalleProductoModa.html" class="px-0 py-3 btnSeeMore"
                   >Ver más</a
                 >
-              </div>
-            </div>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda9_Zapatillas Converse Chuck Taylor All Star Lift Ox.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
-                />
-              </div>             
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$44.899</h5>
-                <p class="card-text fw-bold">
+                />            
+                <p class="text-danger fs-4 mb-0">$44.899</p>
+                <p class="px-2">
                   Zapatillas Converse Chuck Taylor All Star Lift Ox
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda10_Zapatillas Converse Chuck Taylor All Star Lift Ox.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
-                />
-              </div>              
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$71.399</h5>
-                <p class="card-text fw-bold">
+                />            
+                <p class="text-danger fs-4 mb-0">$71.399</p>
+                <p class="px-2">
                   Zapatillas Nike Court Vision Mid Winter
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <div class="card h-100">
-              <div class="text-center">
+            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda11_Zapatiilas-puma-shuffle.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
-                />
-              </div>          
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$41.999</h5>
-                <p class="card-text fw-bold">Zapatillas Puma Shuffle</p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+                />       
+                <p class="text-danger fs-4 mb-0">$41.999</p>
+                <p class="px-2">Zapatillas Puma Shuffle</p>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore
+                ">Ver más</a>
+            </a>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
             <div class="card h-100">
-              <div class="text-center">
+              <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
                 <img
                 src="../Imágenes/DetalleCategoría/categoria_moda/moda2_Zapatillas Nike Revolution 6 Next Nature.jpg"
-                class="card-img-top imgCardCategory"
+                class="card-img-top imgCardHome"
                 alt="adidas serie 1"
-                />
-              </div>              
-              <div class="card-body">
-                <h5 class="card-title text-danger fw-bold fs-3">$43.999</h5>
-                <p class="card-text fw-bold">
+                />            
+                <p class="text-danger fs-4 mb-0">$43.999</p>
+                <p class="px-2">
                   Zapatillas Nike Revolution 6 Next Nature
                 </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="error404.html" class="btn btn-primary">Ver más</a>
-              </div>
-            </div>
+                <a href="error404.html" class="px-0 py-3 btnSeeMore
+                ">Ver más</a>
+              </a>
           </div>
         </article>
         <section
@@ -523,8 +453,9 @@
           </nav>
         </section>
       </section>
-      <a href="error404.html" class="btnWppFixed" target="_blank"><i class="fa fa-whatsapp text-success display-2"></i></a>
-    </main>
+      <a class="d-block px-4 py-2 rounded-2 bg-success btnWppFixed" href="./Pages/error404.html">
+        <i class="fa fa-whatsapp text-white display-3"></i>
+      </a>    </main>
     <footer>
       <div class="container-fluid">
         <div class="row">

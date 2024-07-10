@@ -47,7 +47,9 @@
   <body>
     <header class="sticky-top">
       <nav class="navbar navbar-expand-xl">
-        <div class="container-fluid px-0 px-xl-2 d-flex justify-content-between">
+        <div
+          class="container-fluid px-0 px-xl-2 d-flex justify-content-between"
+        >
           <div>
             <a href="../index.html"
               ><img
@@ -61,8 +63,8 @@
           <button
             class="navbar-toggler text-white border-1 border border-secondary"
             type="button"
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
             aria-expanded="false"
           >
             <span class="navbar-toggler-icon"> </span>
@@ -72,7 +74,7 @@
             id="navbarNav"
           >
             <ul
-              class="w-100 navbar-nav list-unstyled d-xl-flex align-items-center flex-xl-row text-center justify-content-xxl-center pb-3 pb-xl-0  mt-md-2 gap-2 gap-md-3"
+              class="w-100 navbar-nav list-unstyled d-xl-flex align-items-center flex-xl-row text-center justify-content-xxl-center pb-3 pb-xl-0 mt-md-2 gap-2 gap-md-3"
               id="navbarNav"
             >
               <li class="nav-item text-center">
@@ -99,46 +101,42 @@
               <li
                 class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
               >
-
-                  <form class="d-flex formSearch justify-content-center " role="search">
-                    <div class="input-group text-center text-sm-center">
-                      <input
-                        class="form-control rounded-0 inputSearch"
-                        type="search"
-                        placeholder="¿Qué estás buscando?"
-                        aria-label="Search"
-                      />
-                    </div>
-                  </form>
-           
-              </li>
-              <li class="nav-item">
-                    <a href="./detalleCarrito.html" class=""
-                      ><i
-                        class="fa-solid fa-cart-shopping fs-4 iconCart"
-                      ></i
-                    ></a>
-                    <li class="nav-item">
-                      <a
-                      href="./iniciarSesion.html"
-                      class="btn px-4 text-white border-1 border border-secondary btn-outline-dark rounded-0"
-                      >Iniciar sesión</a
-                    >
-                    </li>
-                     
-                    <li class="nav-item">
-                      <a
-                        href="./registro.html"
-                        class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
-                        >Registrarme</a
-                      >
-                      </li>
+                <form
+                  class="d-flex formSearch justify-content-center"
+                  role="search"
+                >
+                  <div class="input-group text-center text-sm-center">
+                    <input
+                      class="form-control rounded-0 inputSearch"
+                      type="search"
+                      placeholder="¿Qué estás buscando?"
+                      aria-label="Search"
+                    />
                   </div>
-                </div>
+                </form>
               </li>
+              <div class="d-flex flex-column mt-2 mt-xl-0 flex-xl-row gap-3 justify-content-center align-items-center">
+                <a href="./detalleCarrito.html" class=""
+                  ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
+                ></a>
+                <li class="nav-item">
+                  <a
+                    href="./iniciarSesion.html"
+                    class="btn px-4 text-white border-1 border border-secondary btn-outline-dark rounded-0"
+                    >Iniciar sesión</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    href="./registro.html"
+                    class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
+                    >Registrarme</a
+                  >
+                </li>
+              </div>
             </ul>
           </div>
-          
         </div>
       </nav>
     </header>
@@ -527,7 +525,9 @@
           </nav>
         </section>
       </section>
-      <a href="error404.html" class="btnWppFixed" target="_blank"><i class="fa fa-whatsapp text-success display-2"></i></a>
+      <a class="d-block px-4 py-2 rounded-2 bg-success btnWppFixed" href="./Pages/error404.html">
+        <i class="fa fa-whatsapp text-white display-3"></i>
+      </a>    
     </main>
     <footer>
       <div class="container-fluid">

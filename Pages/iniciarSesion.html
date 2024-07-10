@@ -36,7 +36,9 @@
   <body>
     <header class="sticky-top">
       <nav class="navbar navbar-expand-xl">
-        <div class="container-fluid px-0 px-xl-2 d-flex justify-content-between">
+        <div
+          class="container-fluid px-0 px-xl-2 d-flex justify-content-between"
+        >
           <div>
             <a href="../index.html"
               ><img
@@ -50,8 +52,8 @@
           <button
             class="navbar-toggler text-white border-1 border border-secondary"
             type="button"
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
             aria-expanded="false"
           >
             <span class="navbar-toggler-icon"> </span>
@@ -61,7 +63,7 @@
             id="navbarNav"
           >
             <ul
-              class="w-100 navbar-nav list-unstyled d-xl-flex align-items-center flex-xl-row text-center justify-content-xxl-center pb-3 pb-xl-0  mt-md-2 gap-2 gap-md-3"
+              class="w-100 navbar-nav list-unstyled d-xl-flex align-items-center flex-xl-row text-center justify-content-xxl-center pb-3 pb-xl-0 mt-md-2 gap-2 gap-md-3"
               id="navbarNav"
             >
               <li class="nav-item text-center">
@@ -88,46 +90,42 @@
               <li
                 class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
               >
-
-                  <form class="d-flex formSearch justify-content-center " role="search">
-                    <div class="input-group text-center text-sm-center">
-                      <input
-                        class="form-control rounded-0 inputSearch"
-                        type="search"
-                        placeholder="¿Qué estás buscando?"
-                        aria-label="Search"
-                      />
-                    </div>
-                  </form>
-           
-              </li>
-              <li class="nav-item">
-                    <a href="./detalleCarrito.html" class=""
-                      ><i
-                        class="fa-solid fa-cart-shopping fs-4 iconCart"
-                      ></i
-                    ></a>
-                    <li class="nav-item">
-                      <a
-                      href="./iniciarSesion.html"
-                      class="btn px-4 text-white border-1 border border-secondary btn-outline-dark rounded-0"
-                      >Iniciar sesión</a
-                    >
-                    </li>
-                     
-                    <li class="nav-item">
-                      <a
-                        href="./registro.html"
-                        class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
-                        >Registrarme</a
-                      >
-                      </li>
+                <form
+                  class="d-flex formSearch justify-content-center"
+                  role="search"
+                >
+                  <div class="input-group text-center text-sm-center">
+                    <input
+                      class="form-control rounded-0 inputSearch"
+                      type="search"
+                      placeholder="¿Qué estás buscando?"
+                      aria-label="Search"
+                    />
                   </div>
-                </div>
+                </form>
               </li>
+              <div class="d-flex flex-column mt-2 mt-xl-0 flex-xl-row gap-3 justify-content-center align-items-center">
+                <a href="./detalleCarrito.html" class=""
+                  ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
+                ></a>
+                <li class="nav-item">
+                  <a
+                    href="./iniciarSesion.html"
+                    class="btn px-4 text-white border-1 border border-secondary btn-outline-dark rounded-0"
+                    >Iniciar sesión</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    href="./registro.html"
+                    class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
+                    >Registrarme</a
+                  >
+                </li>
+              </div>
             </ul>
           </div>
-          
         </div>
       </nav>
     </header>
@@ -135,14 +133,14 @@
       <section class="container py-5">
         <div class="row justify-content-center">
           <article class="col-xl-4 col-md-6 col-sm-10 px-0"> 
-            <form class="pb-3 bg-white border px-3 rounded-start mx-2 mx-sm-0 h-100">
-              <h1 class="text-center fw-bold pt-3">Iniciar sesión</h1>
+            <form class="pb-3 bg-white border px-3 rounded-0 mx-2 mx-sm-0 h-100 shadow">
+              <h1 class="text-center pt-3">Iniciar sesión</h1>
               <hr class="pb-3" />
               <div class="mb-3">
-                <label for="emailLogin" class="form-label lead ms-1">Email:</label>
+                <label for="emailLogin" class="form-label ms-1">Email:</label>
                 <input
                   type="email"
-                  class="form-control rounded-5"
+                  class="form-control rounded-0"
                   id="emailLogin"
                   minlength="11"
                   placeholder="usuario@usuario.com"
@@ -151,12 +149,12 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="passwordLogin" class="form-label lead ms-1" 
+                <label for="passwordLogin" class="form-label ms-1" 
                   >Contraseña:</label
                 >
                 <input
                   type="password"
-                  class="form-control rounded-5"
+                  class="form-control rounded-0"
                   id="passwordLogin"
                   minlength="8"
                   placeholder="contraseña"
@@ -167,7 +165,7 @@
               <div>
                 <button
                   type="submit"
-                  class="btn mb-2 btn-success w-100 fw-bold fs-5 lead rounded-5"
+                  class="btn mb-2 btn-success w-100 lead rounded-0"
                 >
                   Ingresar
                 </button>
@@ -196,13 +194,13 @@
               </div>
               <a
                 href="error404.html"
-                class="mb-2 mt-3 w-100 btn rounded-5 fw-bold fs-5 lead btn-danger"
+                class="mb-2 mt-3 w-100 btn rounded-0 btn-outline-danger"
               >
-                Iniciar sesión con google
+                Iniciar sesión con Google
               </a>
               <a
                 href="error404.html"
-                class="mb-5 w-100 rounded-5 btn fw-bold fs-5 lead btn-primary"
+                class="mb-5 w-100 btn rounded-0 btn-outline-primary"
               >
              
                 Iniciar sesión con Facebook
@@ -217,7 +215,7 @@
           </article>
           <article class="d-none d-md-block col-sm-10 col-md-6 col-xl-4 px-0">
               <img
-              class=" rounded-end imgLogin"
+              class="imgLogin shadow"
               src="../Imágenes/Login/login(1).jpg"
               alt="imagen de login"
               /> 
