@@ -1,13 +1,15 @@
 .cardUs{
+  width: 280px;
   border: 0;
 }
 
 .cardUs,
 .bgCardFooter{
-  background: var(--bg-cardUs);
+  background: #fff;
 }
 
 .cardUs img{
   height: 15rem;
   width: 15rem;
+  object-fit: cover;
 }
