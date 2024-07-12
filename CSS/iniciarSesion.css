@@ -3,7 +3,8 @@
   text-decoration: underline;
 }
 
-.login{
-  width: 380px;
-  height: 625px;
+.imgLogin{
+  width: 400px;
+  height: 525px;
+  object-fit: cover;
 }
