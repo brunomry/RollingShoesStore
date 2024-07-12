@@ -8,3 +8,17 @@
   height: 525px;
   object-fit: cover;
 }
+
+.btnLogin{
+  color: #fff;
+  background: #171717;
+}
+
+.btnLogin:hover{
+  color: #fff;
+  background: #000;
+}
+
+.btnSocial:hover{
+  background: #f7f7f7;
+}

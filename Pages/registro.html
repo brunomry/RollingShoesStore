@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Registro, Registrate, Cuenta, Nueva Cuenta, Nuevo Usuario" />
-    <meta name="author" content="Bruno Madozzo Romay, Leonel Rodrigo Cordero, Javier Exequiel Jiménez, Jeremias Romero, Leonel Lautaro Ramella">
+    <meta
+      name="keywords"
+      content="Registro, Registrate, Cuenta, Nueva Cuenta, Nuevo Usuario"
+    />
+    <meta
+      name="author"
+      content="Bruno Madozzo Romay, Leonel Rodrigo Cordero, Javier Exequiel Jiménez, Jeremias Romero, Leonel Lautaro Ramella"
+    />
     <title>Registro | Rolling Shoes Store</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -12,22 +18,28 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../Imágenes/logo/logo.png">
-    <link rel="stylesheet" href="../CSS/navbar.css">
-    <link rel="stylesheet" href="../CSS/registro.css">
-    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../Imágenes/logo/logo.png" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/registro.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
     <link rel="stylesheet" href="../CSS/styles.css" />
-    <link rel="stylesheet" href="../CSS/mediaQueries.css">
-    <script src="https://kit.fontawesome.com/166a168cfc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/mediaQueries.css" />
+    <script
+      src="https://kit.fontawesome.com/166a168cfc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="fixed-top">
       <nav class="navbar navbar-expand-xl">
         <div
-          class="container-fluid px-0 px-xl-2 d-flex justify-content-between"
+          class="container-fluid ps-0 px-xl-2 d-flex justify-content-between"
         >
           <div>
             <a href="../index.html"
@@ -40,81 +52,99 @@
             </a>
           </div>
           <button
-            class="navbar-toggler text-white border-1 border border-secondary"
+            class="navbar-toggler border-0"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"> </span>
+            <span class="navbar-toggler-icon border-0"></span>
           </button>
-          <div
-            class="collapse navbar-collapse d-flex justify-content-center justify-content-xl-end justify-content-xxl-end mt-0 pt-0"
-            id="navbarNav"
-          >
-            <ul
-              class="w-100 navbar-nav list-unstyled d-xl-flex align-items-center flex-xl-row text-center justify-content-xxl-center pb-3 pb-xl-0 mt-md-2 gap-2 gap-md-3"
-              id="navbarNav"
-            >
-              <li class="nav-item text-center">
-                <a
-                  href="../index.html"
-                  class="text-decoration-none navLink d-block"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item text-center">
-                <a
-                  href="./contacto.html"
-                  class="px-3 text-decoration-none navLink d-block"
-                  >Contacto</a
-                >
-              </li>
-              <li class="nav-item text-center">
-                <a
-                  href="./nosotros.html"
-                  class="text-decoration-none navLink d-block"
-                  >Nosotros</a
-                >
-              </li>
-              <li
-                class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
-              >
-                <form
-                  class="d-flex formSearch justify-content-center"
-                  role="search"
-                >
-                  <div class="input-group text-center text-sm-center">
-                    <input
-                      class="form-control rounded-0 inputSearch"
-                      type="search"
-                      placeholder="¿Qué estás buscando?"
-                      aria-label="Search"
-                    />
-                  </div>
-                </form>
-              </li>
-              <div class="d-flex flex-column mt-2 mt-xl-0 flex-xl-row gap-3 justify-content-center align-items-center">
-                <a href="./detalleCarrito.html" class=""
-                  ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
-                ></a>
-                <li class="nav-item">
-                  <a
-                    href="./iniciarSesion.html"
-                    class="btn px-4 text-white border-1 border border-secondary btn-outline-dark rounded-0"
-                    >Iniciar sesión</a
-                  >
-                </li>
 
-                <li class="nav-item">
+          <div
+            class="offcanvas offcanvas-end text-white canvas"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <a href="../index.html"
+              ><img
+                class="logoNav"
+                src="../Imágenes/Logo/logo.png"
+                alt="Logo Rolling Shoes Store"
+                title="Logo Rolling Shoes Store"
+              />
+            </a>
+              <button
+                type="button"
+                class="btn-close text-dark border border-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body d-flex justify-content-center">
+              <ul
+                class="nav-ul navbar-nav list-unstyled align-items-center justify-content-xl-center justify-content-xxl-center pb-3 pb-xl-0 mt-md-2 gap-3"
+              >
+                <li class="nav-item text-center">
                   <a
-                    href="./registro.html"
-                    class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
-                    >Registrarme</a
+                    href="../index.html"
+                    class="text-decoration-none navLink "
+                    >Inicio</a
                   >
                 </li>
-              </div>
-            </ul>
+                <li class="nav-item text-center ">
+                  <a
+                    href="./contacto.html"
+                    class="px-3 text-decoration-none navLink "
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item text-center">
+                  <a
+                    href="./nosotros.html"
+                    class="text-decoration-none navLink"
+                    >Nosotros</a
+                  >
+                </li>
+                <li
+                  class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
+                >
+                  <form
+                    class="d-flex formSearch justify-content-center"
+                    role="search"
+                  >
+                      <input
+                        class="form-control rounded-0 inputSearch"
+                        type="search"
+                        placeholder="¿Qué estás buscando?"
+                        aria-label="Search"
+                      />
+                  </form>
+                </li>
+                  <a href="./detalleCarrito.html" class=""
+                    ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
+                  ></a>
+                  <li class="nav-item itemLogin">
+                    <a
+                      href="./iniciarSesion.html"
+                      class="btn text-white border-1 border border-secondary btn-outline-dark rounded-0 "
+                      >Iniciar sesión</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      href="./registro.html"
+                      class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
+                      >Registrarme</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -181,7 +211,11 @@
           </div>
           <div class="col-sm-6 col-md-6 col-xl-4">
             <label for="provincesRegister" class="form-label">Provincia:</label>
-            <select id="provincesRegister" class="form-select rounded-0" required>
+            <select
+              id="provincesRegister"
+              class="form-select rounded-0"
+              required
+            >
               <option>seleccione</option>
               <option>Buenos Aires</option>
               <option>Ciudad Autónoma de Buenos Aires</option>
@@ -248,19 +282,30 @@
             />
           </div>
           <div class="col-sm-6 col-lg-4">
-            <button type="submit" class="btn btn-success w-100 pb-2 pt-2 rounded-0">
+            <button
+              type="submit"
+              class="btn btn-success w-100 pb-2 pt-2 rounded-0"
+            >
               Registrarse
             </button>
             <div class="form-check pt-3">
-              <input class="form-check-input" type="checkbox" id="receivePromotionsbyEmailRegister" />
-              <label class="form-check-label" for="receivePromotionsbyEmailRegister">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="receivePromotionsbyEmailRegister"
+              />
+              <label
+                class="form-check-label"
+                for="receivePromotionsbyEmailRegister"
+              >
                 Recibir promociones por Email
               </label>
             </div>
           </div>
           <div class="col-sm-6 text-center text-sm-start pt-3 pt-sm-0 pt-lg-2">
             <span>
-              ¿Ya tienes una cuenta? <a href="./iniciarSesion.html">Inicia sesión</a>
+              ¿Ya tienes una cuenta?
+              <a href="./iniciarSesion.html">Inicia sesión</a>
             </span>
           </div>
         </form>
@@ -305,30 +350,23 @@
                 <i class="fa-regular fa-envelope fs-4 text-info"></i>
                 rollingshoesstore@gmail.com
               </p>
-              <p><i class="fa-solid fa-phone fs-4 text-success"></i> 38155544455</p>
+              <p>
+                <i class="fa-solid fa-phone fs-4 text-success"></i> 38155544455
+              </p>
             </div>
           </div>
           <div class="col-md-4 col-lg-3 pt-5 pt-md-3 pt-lg-5">
             <h4 class="mb-3">Seguinos en nuestras redes</h4>
-            <a
-              href="error404.html"
-              target="_blank"
-              class="text-white"
+            <a href="error404.html" target="_blank" class="text-white"
               ><i class="fa-brands fa-facebook fs-2 mx-1 text-primary"></i
             ></a>
-            <a
-              href="error404.html"
-              target="_blank"
-              class="text-white"
+            <a href="error404.html" target="_blank" class="text-white"
               ><i class="fa-brands fa-instagram fs-2 mx-1 text-danger"></i>
             </a>
             <a href="https://www.X.com/" target="_blank" class="text-white"
               ><i class="fa-brands fa-x-twitter fs-2 mx-1"></i>
             </a>
-            <a
-              href="error404.html"
-              target="_blank"
-              class="text-white"
+            <a href="error404.html" target="_blank" class="text-white"
               ><i class="fa-brands fa-whatsapp fs-2 mx-1 text-success"></i>
             </a>
           </div>

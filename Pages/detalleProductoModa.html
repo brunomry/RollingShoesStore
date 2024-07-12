@@ -50,7 +50,7 @@
     <header class="sticky-top">
       <nav class="navbar navbar-expand-xl">
         <div
-          class="container-fluid px-0 px-xl-2 d-flex justify-content-between"
+          class="container-fluid ps-0 px-xl-2 d-flex justify-content-between"
         >
           <div>
             <a href="../index.html"
@@ -63,81 +63,99 @@
             </a>
           </div>
           <button
-            class="navbar-toggler text-white border-1 border border-secondary"
+            class="navbar-toggler border-0"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"> </span>
+            <span class="navbar-toggler-icon border-0"></span>
           </button>
-          <div
-            class="collapse navbar-collapse d-flex justify-content-center justify-content-xl-end justify-content-xxl-end mt-0 pt-0"
-            id="navbarNav"
-          >
-            <ul
-              class="w-100 navbar-nav list-unstyled d-xl-flex align-items-center flex-xl-row text-center justify-content-xxl-center pb-3 pb-xl-0 mt-md-2 gap-2 gap-md-3"
-              id="navbarNav"
-            >
-              <li class="nav-item text-center">
-                <a
-                  href="../index.html"
-                  class="text-decoration-none navLink d-block"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item text-center">
-                <a
-                  href="./contacto.html"
-                  class="px-3 text-decoration-none navLink d-block"
-                  >Contacto</a
-                >
-              </li>
-              <li class="nav-item text-center">
-                <a
-                  href="./nosotros.html"
-                  class="text-decoration-none navLink d-block"
-                  >Nosotros</a
-                >
-              </li>
-              <li
-                class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
-              >
-                <form
-                  class="d-flex formSearch justify-content-center"
-                  role="search"
-                >
-                  <div class="input-group text-center text-sm-center">
-                    <input
-                      class="form-control rounded-0 inputSearch"
-                      type="search"
-                      placeholder="¿Qué estás buscando?"
-                      aria-label="Search"
-                    />
-                  </div>
-                </form>
-              </li>
-              <div class="d-flex flex-column mt-2 mt-xl-0 flex-xl-row gap-3 justify-content-center align-items-center">
-                <a href="./detalleCarrito.html" class=""
-                  ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
-                ></a>
-                <li class="nav-item">
-                  <a
-                    href="./iniciarSesion.html"
-                    class="btn px-4 text-white border-1 border border-secondary btn-outline-dark rounded-0"
-                    >Iniciar sesión</a
-                  >
-                </li>
 
-                <li class="nav-item">
+          <div
+            class="offcanvas offcanvas-end text-white canvas"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <a href="../index.html"
+              ><img
+                class="logoNav"
+                src="../Imágenes/Logo/logo.png"
+                alt="Logo Rolling Shoes Store"
+                title="Logo Rolling Shoes Store"
+              />
+            </a>
+              <button
+                type="button"
+                class="btn-close text-dark border border-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body d-flex justify-content-center">
+              <ul
+                class="nav-ul navbar-nav list-unstyled align-items-center justify-content-xl-center justify-content-xxl-center pb-3 pb-xl-0 mt-md-2 gap-3"
+              >
+                <li class="nav-item text-center">
                   <a
-                    href="./registro.html"
-                    class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
-                    >Registrarme</a
+                    href="../index.html"
+                    class="text-decoration-none navLink "
+                    >Inicio</a
                   >
                 </li>
-              </div>
-            </ul>
+                <li class="nav-item text-center ">
+                  <a
+                    href="./contacto.html"
+                    class="px-3 text-decoration-none navLink "
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item text-center">
+                  <a
+                    href="./nosotros.html"
+                    class="text-decoration-none navLink"
+                    >Nosotros</a
+                  >
+                </li>
+                <li
+                  class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
+                >
+                  <form
+                    class="d-flex formSearch justify-content-center"
+                    role="search"
+                  >
+                      <input
+                        class="form-control rounded-0 inputSearch"
+                        type="search"
+                        placeholder="¿Qué estás buscando?"
+                        aria-label="Search"
+                      />
+                  </form>
+                </li>
+                  <a href="./detalleCarrito.html" class=""
+                    ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
+                  ></a>
+                  <li class="nav-item itemLogin">
+                    <a
+                      href="./iniciarSesion.html"
+                      class="btn text-white border-1 border border-secondary btn-outline-dark rounded-0 "
+                      >Iniciar sesión</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      href="./registro.html"
+                      class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
+                      >Registrarme</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
