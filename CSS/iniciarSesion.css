@@ -22,3 +22,9 @@
 .btnSocial:hover{
   background: #f7f7f7;
 }
+
+@media all and (min-width:1200px){
+  .formLogin{
+    width: 500px;
+  }
+}

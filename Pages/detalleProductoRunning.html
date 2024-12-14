@@ -32,6 +32,7 @@
     <link rel="icon" type="image/png" href="../Imágenes/logo/logo.png" />
     <link rel="stylesheet" href="../CSS/navbar.css">
     <link rel="stylesheet" href="../CSS/detalleProducto.css">
+    <link rel="stylesheet" href="../CSS/carritoDeCompras.css"/>
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/styles.css" />
     <link rel="stylesheet" href="../CSS/mediaQueries.css">
@@ -126,13 +127,13 @@
                       />
                   </form>
                 </li>
-                  <a href="./detalleCarrito.html" class=""
+                  <button type="button" class="border-0 bg-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart"
                     ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
-                  ></a>
+                  ></button>
                   <li class="nav-item itemLogin">
                     <a
                       href="./iniciarSesion.html"
-                      class="btn text-white border-1 border border-secondary btn-outline-dark rounded-0 "
+                      class="btn border-1 border btn-outline-dark rounded-0 "
                       >Iniciar sesión</a
                     >
                   </li>
@@ -140,7 +141,7 @@
                   <li class="nav-item">
                     <a
                       href="./registro.html"
-                      class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
+                      class="btn px-4 border-1 border btn-outline-dark rounded-0"
                       >Registrarme</a
                     >
                   </li>
@@ -242,14 +243,16 @@
               </button>
             </div>
           </article>
-          <article class="col-md-6 mt-4 mt-md-0 mt-xl-5">
+          <article class="col-md-6 mt-4 mt-md-0 mt-xl-3">
             <div>
+              <div class="d-flex mb-3 justify-content-end justify-content-lg-start">
+                <i class="fa-regular fa-heart fs-4"></i>                
+              </div>
               <h2 class="fw-bold">Zapatillas Nike Air Max Excee</h2>
               <hr />
-              <p class="text-danger fs-4">$60.399</p>
-              <a href="error404.html">Ver medios de pago</a>
-              <p class="mt-4 fw-bold mb-0">Descripción</p>
-              <p>
+              <p class="fs-4 mb-0 fw-bold price py-1 py-lg-2">$60.399</p>
+              <p class="fw-bold mb-0">Descripción</p>
+              <p class="text-secondary">
                 Lucí con estilo en tus entrenamientos o en tu día a día, con las
                 Zapatillas Nike Air Max Excee. Confeccionada con materiales
                 sintéticos de alta calidad que te aseguran su resistencia y
@@ -257,60 +260,32 @@
                 mejores y amortiguadas pisadas que te harán sentir seguro y
                 confiado en cualquier momento que las lleves puestas.
               </p>
-              <div class="d-flex flex-column flex-xl-row column-gap-4 gap-xl-4">
-                <div class="form-check-label d-flex align-items-center gap-2 mb-2 mb-0">
-                  <label for="cantRunning" class="fw-bold ">Cantidad:</label>
-                  <input
-                    type="number"
-                    class="form-check-input py-3 ps-2 m-0 rounded-0 inputQuantityProductDetail"
-                    id="cantRunning"
-                    value="0"
-                    min="1"
-                    max="20"
-                  />
+              <div
+              class="d-flex flex-column column-gap-4 gap-xl-4"
+            >
+              <div class="d-flex flex-column">
+                <p for="talle" class="form-label me-2 fw-bold"
+                  >Talle</p
+                >
+                <div class="d-flex gap-2 flex-wrap containerSizes">
+                  <div class="rounded-2 px-3 py-2 ">35</div>
+                  <div class="rounded-2 px-3 py-2">36</div>
+                  <div class="rounded-2 px-3 py-2">37</div>
+                  <div class="rounded-2 px-3 py-2">38</div>
+                  <div class="rounded-2 px-3 py-2">39</div>
+                  <div class="rounded-2 px-3 py-2">40</div>
+                  <div class="rounded-2 px-3 py-2">41</div>
+                  <div class="rounded-2 px-3 py-2">42</div>
+                  <div class="rounded-2 px-3 py-2">43</div>
+                  <div class="rounded-2 px-3 py-2">44</div>
                 </div>
-                <div class="d-flex align-items-center">
-                  <label for="talle" class="form-label me-2 fw-bold">Talle:</label>
-                  <select class="form-select selectTalle mb-2 py-1 rounded-0" id="talle">
-                    <option value="1">seleccione</option>
-                    <option value="35" disabled>35</option>
-                    <option value="36">36</option>
-                    <option value="37">37</option>
-                    <option value="38">38</option>
-                    <option value="39" disabled>39</option>
-                    <option value="40">40</option>
-                    <option value="41" disabled>41</option>
-                    <option value="42">42</option>
-                    <option value="43">43</option>
-                    <option value="44">44</option>
-                  </select>
-                </div>
-              </div>
-              <a
-                href="detalleCarrito.html"
-                class="btn mt-4 mb-lg-5 btnAddCart text-white me-2 rounded-0"
-                >Agregar al carrito</a
-              >
-              <a
-                href="detalleCarrito.html"
-                class="btn mt-4 mt-lg-4 mb-lg-5 btnBuyNow text-white rounded-0"
-                >Comprar ahora</a
-              >
-              <hr class="mb-2" />
-              <div class="d-flex justify-content-between">
-                <span class="fw-bold">Compartir</span>
-                <div class="d-flex gap-4">
-                  <a href="error404.html"
-                    ><i class="fa-brands fa-facebook fs-3"></i
-                  ></a>
-                  <a href="error404.html"
-                    ><i class="fa-brands fa-instagram text-danger fs-3"></i
-                  ></a>
-                  <a href="error404.html"
-                    ><i class="fa-brands fa-whatsapp text-success fs-3"></i
-                  ></a>
-                </div>
-              </div>
+            </div>
+            <a href="error404.html" class="my-2 my-lg-0"><small>Ver medios de pago</small></a>
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart"
+              class="btn mb-lg-5 btnAddCart text-white fw-bold rounded-3 w-100 p-3 "
+              >AGREGAR AL CARRITO</button
+            >
+          </div>
             </div>
           </article>
           <article class="col-12 pt-5 px-2">
@@ -346,7 +321,7 @@
                 </div>
               </form>
               <div class="rounded mt-5 py-5 containerComments">
-                <div class="d-flex gap-1 gap-md-4 mb-4 rounded-5 bg-light">
+                <div class="d-flex gap-1 gap-md-4 mb-4 rounded-5">
                   <div>
                     <img
                       src="../Imágenes/DetalleProductoRunning/Comentarios/messi.jpeg"
@@ -354,34 +329,25 @@
                       alt="usuario messi"
                     />
                   </div>
-                  <div class="w-100 comment">
+                  <div class="w-100 comment bg-white">
                     <div class="d-flex justify-content-between">
                       <span class="fw-bold">leoMessi</span>
-                      <span class="text-end">hace 1 hora</span>
+                      <div class="text-end">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
                     </div>
                     <p class="mb-0">
                       Hola! A anto le encantaron la zapatillas! Ahora se va
                       corre, yo me voy a juga al fulbo.
                     </p>
-                    <div class="d-flex gap-3">
-                      <button
-                        class="border-0 text-primary btnReaction px-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalProductDetail"
-                      >
-                        Me gusta
-                      </button>
-                      <button
-                        class="border-0 text-primary btnReaction px-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalProductDetail"
-                      >
-                        Responder
-                      </button>
-                    </div>
+                    <small class="text-secondary">hace un momento</small>
                   </div>
                 </div>
-                <div class="d-flex gap-1 gap-md-4 mb-4 rounded-5 bg-light">
+                <div class="d-flex gap-1 gap-md-4 mb-4 rounded-5">
                   <div>
                     <img
                       src="../Imágenes/DetalleProductoRunning/Comentarios/beltran.jpeg"
@@ -392,28 +358,18 @@
                   <div class="w-100">
                     <div class="d-flex justify-content-between">
                       <span class="fw-bold">morebeltran</span>
-                      <span class="text-end">hace 4 días</span>
-                    </div>
+                      <div class="text-end">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>                    </div>
                     <p class="mb-0">Muy buenas las zapatillas!</p>
-                    <div class="d-flex gap-3">
-                      <button
-                        class="border-0 text-primary btnReaction px-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalProductDetail"
-                      >
-                        Me gusta
-                      </button>
-                      <button
-                        class="border-0 text-primary btnReaction px-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalProductDetail"
-                      >
-                        Responder
-                      </button>
-                    </div>
+                    <small class="text-secondary">hace 2 semanas</small>
                   </div>
                 </div>
-                <div class="d-flex gap-1 gap-md-4 mb-4 rounded-5 bg-light">
+                <div class="d-flex gap-1 gap-md-4 mb-4 rounded-5 ">
                   <div>
                     <img
                       src="../Imágenes/DetalleProductoRunning/Comentarios/basile.jpg"
@@ -424,28 +380,19 @@
                   <div class="w-100">
                     <div class="d-flex justify-content-between">
                       <span class="fw-bold">cocoBasile</span>
-                      <span class="text-end">hace 1 semana</span>
+                      <div class="text-end">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
                     </div>
                     <p class="mb-0">
                       Hola muchachos! A mi mujer le gustaron las zapatillas.
                       Cuando quieran me llaman y nos tomamos un Blue label.
                     </p>
-                    <div class="d-flex gap-3">
-                      <button
-                        class="border-0 text-primary btnReaction px-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalProductDetail"
-                      >
-                        Me gusta
-                      </button>
-                      <button
-                        class="border-0 text-primary btnReaction px-0"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalProductDetail"
-                      >
-                        Responder
-                      </button>
-                    </div>
+                    <small class="text-secondary">hace 1 día</small>
                   </div>
                 </div>
               </div>
@@ -457,28 +404,28 @@
     <footer>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 col-lg-3 footerContainer">
-            <img class="m-3" src="../Imágenes/logo/logo.png" alt="Logo" />
+          <div class="col-md-12 col-lg-3 footerContainer d-flex align-items-start mt-5">
+            <p class="logoFooter fw-bold">Rolling Shoes Store</p>
           </div>
           <div class="col-md-4 col-lg-3 pt-3 pt-md-3 pt-lg-5">
-            <h4 class="mb-3">Información</h4>
+            <h5 class="mb-3">Información</h5>
             <div class="informationLinks">
               <ul class="list-unstyled">
-                <li><a href="error404.html">Medios de pago</a></li>
+                <li><a href="./Pages/error404.html">Medios de pago</a></li>
                 <li>
-                  <a href="error404.html">Preguntas frecuentes</a>
+                  <a href="./Pages/error404.html">Preguntas frecuentes</a>
                 </li>
                 <li>
-                  <a href="error404.html">Términos y condiciones</a>
+                  <a href="./Pages/error404.html">Términos y condiciones</a>
                 </li>
                 <li>
-                  <a href="error404.html">Cambio y/o devolución</a>
+                  <a href="./Pages/error404.html">Cambio y/o devolución</a>
                 </li>
                 <li>
-                  <a href="error404.html">Envíos a domicilio</a>
+                  <a href="./Pages/error404.html">Envíos a domicilio</a>
                 </li>
                 <li>
-                  <a href="error404.html">Retiros en sucursal</a>
+                  <a href="./Pages/error404.html">Retiros en sucursal</a>
                 </li>
               </ul>
             </div>
@@ -490,34 +437,27 @@
               <p>Lunes a Sábados</p>
               <p>9hs a 13hs | 17hs a 21hs</p>
               <p>
-                <i class="fa-regular fa-envelope fs-4 text-info"></i>
+                <i class="fa-regular fa-envelope fs-4"></i>
                 rollingshoesstore@gmail.com
               </p>
-              <p><i class="fa-solid fa-phone fs-4 text-success"></i> 38155544455</p>
+              <p>
+                <i class="fa-solid fa-phone fs-4"></i> 38155544455
+              </p>
             </div>
           </div>
           <div class="col-md-4 col-lg-3 pt-5 pt-md-3 pt-lg-5">
             <h4 class="mb-3">Seguinos en nuestras redes</h4>
-            <a
-              href="error404.html"
-              target="_blank"
-              class="text-white"
-              ><i class="fa-brands fa-facebook fs-2 mx-1 text-primary"></i
+            <a href="./Pages/error404.html" target="_blank" class="text-white"
+              ><i class="fa-brands fa-facebook fs-2 mx-1"></i
             ></a>
-            <a
-              href="error404.html"
-              target="_blank"
-              class="text-white"
-              ><i class="fa-brands fa-instagram fs-2 mx-1 text-danger"></i>
+            <a href="./Pages/error404.html" target="_blank" class="text-white"
+              ><i class="fa-brands fa-instagram fs-2 mx-1"></i>
             </a>
-            <a href="error404.html" target="_blank" class="text-white"
+            <a href="./Pages/error404.html" target="_blank" class="text-white"
               ><i class="fa-brands fa-x-twitter fs-2 mx-1"></i>
             </a>
-            <a
-              href="error404.html"
-              target="_blank"
-              class="text-white"
-              ><i class="fa-brands fa-whatsapp fs-2 mx-1 text-success"></i>
+            <a href="./Pages/error404.html" target="_blank" class="text-white"
+              ><i class="fa-brands fa-whatsapp fs-2 mx-1 "></i>
             </a>
           </div>
         </div>
@@ -526,6 +466,100 @@
         &copy; RollingCodeSchool 2023 - Todos los derechos reservados
       </p>
     </footer>
+        <!-- Carrito -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Mi compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column justify-content-between gap-2">
+            <article class="d-flex flex-column gap-2">
+              <div class="card border w-100 rounded-0">
+                <div class="row g-0">
+                  <article class="col-12 col-sm-5 col-lg-4 text-center">
+                    <img
+                      src="../Imágenes/DetalleCarrito/Zapatillas Nike Air Max Excee.jpg"
+                      class="img-fluid imageProductDetailCart"
+                      alt="Zapatilla Nike Air Max Excee"
+                    />
+                  </article>
+                  <article class="col-12 col-sm-7 col-lg-8">
+                    <div class="card-body py-3">
+                      <div class="d-flex justify-content-between">
+                          <a
+                            href="detalleProductoRunning.html"
+                            class=" link-dark d-block"
+                            ><small>Zapatillas Nike Air Max Excee</small></a
+                          >
+                          <a
+                            href="error404.html"
+                            class="text-primary linkEliminar"
+                            ><i class="fa-solid fa-trash text-secondary"></i></a
+                          >
+                      </div>
+                      <small class="text-secondary mt-3">Talle: 42 | Color: Negro</small>
+                      <div class="mt-3 d-flex justify-content-between">
+                        <span class="fw-bold price">$60.399</span>
+                        <div class="d-flex gap-2">
+                          <button class="border-0 px-2 btnCart">-</button>
+                          <input type="text" class="inputCant ps-1 border">
+                          <button class="border-0 px-2 btnCart">+</button>
+                        </div>
+                      </div>
+                    </div>               
+                  </article>
+                </div>        
+              </div>
+              <div class="card border w-100 rounded-0">
+                <div class="row g-0">
+                  <article class="col-12 col-sm-5 col-lg-4 text-center">
+                    <img
+                      src="../Imágenes/DetalleCarrito/zapatillas-puma-shuffle.jpg"
+                      class="img-fluid imageProductDetailCart"
+                      alt="Zapatilla Nike Air Max Excee"
+                    />
+                  </article>
+                  <article class="col-12 col-sm-7 col-lg-8">
+                    <div class="card-body py-3">
+                      <div class="d-flex justify-content-between">
+                          <a
+                            href="detalleProductoRunning.html"
+                            class=" link-dark d-block"
+                            ><small>Zapatillas Puma Shuffle Hombre</small></a
+                          >
+                          <a
+                            href="error404.html"
+                            class="text-primary linkEliminar"
+                            ><i class="fa-solid fa-trash text-secondary"></i></a
+                          >
+                      </div>
+                      <small class="text-secondary mt-3">Talle: 42 | Color: Negro</small>
+                      <div class="mt-3 d-flex justify-content-between">
+                        <span class="fw-bold price">$41.999</span>
+                        <div class="d-flex gap-2">
+                          <button class="border-0 px-2 btnCart">-</button>
+                          <input type="text" class="inputCant ps-1 border">
+                          <button class="border-0 px-2 btnCart">+</button>
+                        </div>
+                      </div>
+                    </div>               
+                  </article>
+                </div>        
+              </div>
+            </article>
+            <article>
+              <div class="d-flex justify-content-between py-2 border-top">
+                <small>Subtotal</small>
+                <small>$102.398</small>
+              </div>
+              <div class="d-flex justify-content-between py-2 border-top">
+                <p class="fw-bold">Total</p>
+                <p class="fw-bold">$102.398</p>
+              </div>
+              <button class="btn btn-dark rounded-0 w-100 py-3 px-5 text-white">Iniciar pago</button>
+            </article>
+          </div>
+        </div>
     <!-- Modal -->
     <div
       class="modal fade"

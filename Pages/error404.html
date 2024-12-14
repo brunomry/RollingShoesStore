@@ -22,6 +22,7 @@
     <link rel="icon" type="icon" href="../Imágenes/Error404/error404.jpg" />
     <link rel="stylesheet" href="../CSS/navbar.css">
     <link rel="stylesheet" href="../CSS/error404.css">
+    <link rel="stylesheet" href="../CSS/carritoDeCompras.css"/>
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/styles.css" />
     <link rel="stylesheet" href="../CSS/mediaQueries.css">
@@ -119,13 +120,13 @@
                       />
                   </form>
                 </li>
-                  <a href="./detalleCarrito.html" class=""
+                    <button type="button" class="border-0 bg-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart"
                     ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
-                  ></a>
+                  ></button>
                   <li class="nav-item itemLogin">
                     <a
                       href="./iniciarSesion.html"
-                      class="btn text-white border-1 border border-secondary btn-outline-dark rounded-0 "
+                      class="btn border-1 border btn-outline-dark rounded-0 "
                       >Iniciar sesión</a
                     >
                   </li>
@@ -133,7 +134,7 @@
                   <li class="nav-item">
                     <a
                       href="./registro.html"
-                      class="btn px-4 border-1 border-secondary text-white btn-outline-dark rounded-0"
+                      class="btn px-4 border-1 border btn-outline-dark rounded-0"
                       >Registrarme</a
                     >
                   </li>
@@ -144,21 +145,16 @@
         </div>
       </nav>
     </header>
-    <main class="main">
+    <main class="main py-5">
       <section class="container py-5">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1 class="my-2">La página solicitada no se encuentra disponible</h1>
-            <img
-              class="img-fluid mb-3"
-              src="../Imágenes/Error404/error404.jpg"
-              alt="Imágen error 404"
-            />
+            <h1 class="my-2">La página solicitada no fue encontrada.</h1>
           </div>
         </div>
         <div class="text-center">
-          <a href="../index.html" class="btn btn-primary"
-            >Volver al Inicio</a>
+          <a href="../index.html" class="btn btn-dark border px-5 py-3 mt-3"
+            >Volver</a>
           </a>
         </div>
       </section>
@@ -166,28 +162,28 @@
     <footer>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 col-lg-3 footerContainer">
-            <img class="m-3" src="../Imágenes/logo/logo.png" alt="Logo" />
+          <div class="col-md-12 col-lg-3 footerContainer d-flex align-items-start mt-5">
+            <p class="logoFooter fw-bold">Rolling Shoes Store</p>
           </div>
           <div class="col-md-4 col-lg-3 pt-3 pt-md-3 pt-lg-5">
-            <h4 class="mb-3">Información</h4>
+            <h5 class="mb-3">Información</h5>
             <div class="informationLinks">
               <ul class="list-unstyled">
-                <li><a href="error404.html">Medios de pago</a></li>
+                <li><a href="./Pages/error404.html">Medios de pago</a></li>
                 <li>
-                  <a href="error404.html">Preguntas frecuentes</a>
+                  <a href="./Pages/error404.html">Preguntas frecuentes</a>
                 </li>
                 <li>
-                  <a href="error404.html">Términos y condiciones</a>
+                  <a href="./Pages/error404.html">Términos y condiciones</a>
                 </li>
                 <li>
-                  <a href="error404.html">Cambio y/o devolución</a>
+                  <a href="./Pages/error404.html">Cambio y/o devolución</a>
                 </li>
                 <li>
-                  <a href="error404.html">Envíos a domicilio</a>
+                  <a href="./Pages/error404.html">Envíos a domicilio</a>
                 </li>
                 <li>
-                  <a href="error404.html">Retiros en sucursal</a>
+                  <a href="./Pages/error404.html">Retiros en sucursal</a>
                 </li>
               </ul>
             </div>
@@ -199,36 +195,27 @@
               <p>Lunes a Sábados</p>
               <p>9hs a 13hs | 17hs a 21hs</p>
               <p>
-                <i class="fa-regular fa-envelope fs-4 text-info"></i>
+                <i class="fa-regular fa-envelope fs-4"></i>
                 rollingshoesstore@gmail.com
               </p>
               <p>
-                <i class="fa-solid fa-phone fs-4 text-success"></i> 38155544455
+                <i class="fa-solid fa-phone fs-4"></i> 38155544455
               </p>
             </div>
           </div>
           <div class="col-md-4 col-lg-3 pt-5 pt-md-3 pt-lg-5">
             <h4 class="mb-3">Seguinos en nuestras redes</h4>
-            <a
-              href="error404.html"
-              target="_blank"
-              class="text-white"
-              ><i class="fa-brands fa-facebook fs-2 mx-1 text-primary"></i
+            <a href="./Pages/error404.html" target="_blank" class="text-white"
+              ><i class="fa-brands fa-facebook fs-2 mx-1"></i
             ></a>
-            <a
-              href="error404.html"
-              target="_blank"
-              class="text-white"
-              ><i class="fa-brands fa-instagram fs-2 mx-1 text-danger"></i>
+            <a href="./Pages/error404.html" target="_blank" class="text-white"
+              ><i class="fa-brands fa-instagram fs-2 mx-1"></i>
             </a>
-            <a href="https://www.X.com/" target="_blank" class="text-white"
+            <a href="./Pages/error404.html" target="_blank" class="text-white"
               ><i class="fa-brands fa-x-twitter fs-2 mx-1"></i>
             </a>
-            <a
-              href="error404.html"
-              target="_blank"
-              class="text-white"
-              ><i class="fa-brands fa-whatsapp fs-2 mx-1 text-success"></i>
+            <a href="./Pages/error404.html" target="_blank" class="text-white"
+              ><i class="fa-brands fa-whatsapp fs-2 mx-1 "></i>
             </a>
           </div>
         </div>
@@ -237,6 +224,100 @@
         &copy; RollingCodeSchool 2023 - Todos los derechos reservados
       </p>
     </footer>
+      <!-- Carrito -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Mi compra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between gap-2">
+          <article class="d-flex flex-column gap-2">
+            <div class="card border w-100 rounded-0">
+              <div class="row g-0">
+                <article class="col-12 col-sm-5 col-lg-4 text-center">
+                  <img
+                    src="../Imágenes/DetalleCarrito/Zapatillas Nike Air Max Excee.jpg"
+                    class="img-fluid imageProductDetailCart"
+                    alt="Zapatilla Nike Air Max Excee"
+                  />
+                </article>
+                <article class="col-12 col-sm-7 col-lg-8">
+                  <div class="card-body py-3">
+                    <div class="d-flex justify-content-between">
+                        <a
+                          href="detalleProductoRunning.html"
+                          class=" link-dark d-block"
+                          ><small>Zapatillas Nike Air Max Excee</small></a
+                        >
+                        <a
+                          href="error404.html"
+                          class="text-primary linkEliminar"
+                          ><i class="fa-solid fa-trash text-secondary"></i></a
+                        >
+                    </div>
+                    <small class="text-secondary mt-3">Talle: 42 | Color: Negro</small>
+                    <div class="mt-3 d-flex justify-content-between">
+                      <span class="fw-bold price">$60.399</span>
+                      <div class="d-flex gap-2">
+                        <button class="border-0 px-2 btnCart">-</button>
+                        <input type="text" class="inputCant ps-1 border">
+                        <button class="border-0 px-2 btnCart">+</button>
+                      </div>
+                    </div>
+                  </div>               
+                </article>
+              </div>        
+            </div>
+            <div class="card border w-100 rounded-0">
+              <div class="row g-0">
+                <article class="col-12 col-sm-5 col-lg-4 text-center">
+                  <img
+                    src="../Imágenes/DetalleCarrito/zapatillas-puma-shuffle.jpg"
+                    class="img-fluid imageProductDetailCart"
+                    alt="Zapatilla Nike Air Max Excee"
+                  />
+                </article>
+                <article class="col-12 col-sm-7 col-lg-8">
+                  <div class="card-body py-3">
+                    <div class="d-flex justify-content-between">
+                        <a
+                          href="detalleProductoRunning.html"
+                          class=" link-dark d-block"
+                          ><small>Zapatillas Puma Shuffle Hombre</small></a
+                        >
+                        <a
+                          href="error404.html"
+                          class="text-primary linkEliminar"
+                          ><i class="fa-solid fa-trash text-secondary"></i></a
+                        >
+                    </div>
+                    <small class="text-secondary mt-3">Talle: 42 | Color: Negro</small>
+                    <div class="mt-3 d-flex justify-content-between">
+                      <span class="fw-bold price">$41.999</span>
+                      <div class="d-flex gap-2">
+                        <button class="border-0 px-2 btnCart">-</button>
+                        <input type="text" class="inputCant ps-1 border">
+                        <button class="border-0 px-2 btnCart">+</button>
+                      </div>
+                    </div>
+                  </div>               
+                </article>
+              </div>        
+            </div>
+          </article>
+          <article>
+            <div class="d-flex justify-content-between py-2 border-top">
+              <small>Subtotal</small>
+              <small>$102.398</small>
+            </div>
+            <div class="d-flex justify-content-between py-2 border-top">
+              <p class="fw-bold">Total</p>
+              <p class="fw-bold">$102.398</p>
+            </div>
+            <button class="btn btn-dark rounded-0 w-100 py-3 px-5 text-white">Iniciar pago</button>
+          </article>
+        </div>
+      </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

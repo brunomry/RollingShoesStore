@@ -81,7 +81,7 @@ Clona este repositorio en tu máquina local a través de una terminal:
 | Bruno Madozzo Romay                 | [brunomry](https://github.com/brunomry)                  |
 | Leonel Rodrigo Cordero              | [LeonelRC23](https://github.com/LeonelRC23)              |
 | Javier Jimenez                      | [Javier359](https://github.com/Javier359)                |
-| Leonel Ramella                      | [-]()                                                    |
-| Jeremias Romero                     | [-]()                                                    |
+| Leonel Ramella                      | -                                                 |
+| Jeremias Romero                     | -                                                   |
              
 

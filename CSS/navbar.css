@@ -1,6 +1,8 @@
 .navbar{
-  background:var(--bg-dark);
-  height: 130px;
+  background:#fff;
+  height: 100px;
+  border-bottom: 1px solid rgb(231, 230, 230);
+  color: #000;
 }
 
 .navbar-toggler{
@@ -21,16 +23,16 @@
 }
 
 .logoNav{
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 .navLink{
-  color: #fff;
+  color: #222;
 }
 
 .navLink:hover{
-  color: var(--bg-light-dark);
+  color: #8a8989;
 }
 
 .search{
@@ -39,22 +41,19 @@
 
 .inputSearch{
   width: 280px;
-  background: #000000;
-  background: #171717;
-  border:1px solid gray;
+  border:1px solid rgb(207, 207, 207);
 }
 
 .inputSearch::placeholder{
-  color: #dddcdc;
+  color: gray;
 }
 
 .inputSearch:focus{
-  background: #171717;
-  color: #fff;
+  border: 1px solid #d1cfcf;
 }
 
 .iconCart{
-  color: #fff;
+  color: #222;
 }
 
 .iconCart:hover{
@@ -66,6 +65,11 @@
 }
 
 @media all and (min-width:1200px){
+  .logoNav{
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
   .inputSearch{
     width: 250px;
   }

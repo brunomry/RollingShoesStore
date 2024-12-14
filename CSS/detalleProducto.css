@@ -5,9 +5,17 @@
   border-radius: 5px;
 }
 
-.selectTalle{
-  padding: 0 5px;
-  width: 9.375rem;
+.containerSizes div{
+  border: 1px solid #b9b9b9;
+  cursor: pointer;
+}
+
+.containerSizes div:hover{
+  border: 1px solid #707070;
+}
+
+.price{
+  color: #464FAE;
 }
 
 .btnAddCart{
@@ -16,14 +24,6 @@
 
 .btnAddCart:hover{
   background: #000;
-}
-
-.btnBuyNow{
-  background: #0caa51de;
-}
-
-.btnBuyNow:hover{
-  background: #017533;
 }
 
 .formComment,

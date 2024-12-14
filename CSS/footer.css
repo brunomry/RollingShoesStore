@@ -2,11 +2,17 @@ footer {
   height: 30%;
   background-color: var(--bg-footer);
   text-align: center;
-  color: #fff;
+  color: #333;
 }
 
-footer h4 {
-  color: var(--text-titleFooter);
+footer .logoFooter{
+  font-size: 20px;
+  color: #464FAE;
+}
+
+footer * {
+  font-size: 14px;
+  color: #464545;
 }
 
 .footerContainer img {  
@@ -21,11 +27,11 @@ footer p {
 .informationLinks { 
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .informationLinks a {
   padding-top: 0.5rem;
-  color: #fff;
 }
 
 .footerContact {
