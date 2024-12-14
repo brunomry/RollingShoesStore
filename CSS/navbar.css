@@ -10,7 +10,8 @@
 }
 
 .canvas{
-  background:var(--bg-dark);
+  background:#fff;
+  color: #000;
 }
 
 .navbar-collapse{

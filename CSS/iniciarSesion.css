@@ -3,10 +3,8 @@
   text-decoration: underline;
 }
 
-.imgLogin{
-  width: 400px;
-  height: 525px;
-  object-fit: cover;
+.formLogin{
+  max-width: 500px;
 }
 
 .btnLogin{

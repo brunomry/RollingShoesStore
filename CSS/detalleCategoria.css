@@ -1,10 +1,9 @@
-.imageModa{
-  object-fit: fill;
-  width: 900px;
-  min-height: 18rem;
+@media all and (min-width:992px){
+  .filters{
+    position: sticky;
+    top: 150px;
+    height: 60vh;
+  }
 }
 
-.imgCardCategory{
-  width: 13.4rem;
-  height: 14.5rem;
-}
+

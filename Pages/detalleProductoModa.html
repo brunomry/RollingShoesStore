@@ -100,20 +100,15 @@
                     class="text-decoration-none navLink "
                     >Inicio</a
                   >
-                </li>
-                <li class="nav-item text-center ">
-                  <a
-                    href="./contacto.html"
-                    class="px-3 text-decoration-none navLink "
-                    >Contacto</a
-                  >
-                </li>
-                <li class="nav-item text-center">
-                  <a
-                    href="./nosotros.html"
-                    class="text-decoration-none navLink"
-                    >Nosotros</a
-                  >
+                </li>               
+                <li class="nav-item dropdown text-center">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./detalleCategoriaModa.html">Moda</a></li>
+                    <li><a class="dropdown-item" href="./detalleCategoriaRunning.html">Running</a></li>
+                  </ul>
                 </li>
                 <li
                   class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
@@ -129,6 +124,13 @@
                         aria-label="Search"
                       />
                   </form>
+                </li>
+                <li class="nav-item text-center ">
+                  <a
+                    href="./contacto.html"
+                    class="px-3 text-decoration-none navLink "
+                    >Contacto</a
+                  >
                 </li>
                     <button type="button" class="border-0 bg-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart"
                     ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
@@ -410,23 +412,18 @@
             <h5 class="mb-3">Información</h5>
             <div class="informationLinks">
               <ul class="list-unstyled">
-                <li><a href="./error404.html">Medios de pago</a></li>
-                <li>
-                  <a href="./error404.html">Preguntas frecuentes</a>
-                </li>
-                <li>
-                  <a href="./error404.html">Términos y condiciones</a>
-                </li>
-                <li>
-                  <a href="./error404.html">Cambio y/o devolución</a>
-                </li>
-                <li>
-                  <a href="./error404.html">Envíos a domicilio</a>
-                </li>
-                <li>
-                  <a href="./error404.html">Retiros en sucursal</a>
-                </li>
-              </ul>
+                <a href="./error404.html">Preguntas frecuentes</a>
+              </li>
+              <li>
+                <a href="./error404.html">Términos y condiciones</a>
+              </li>
+              <li>
+                <a href="./error404.html">Sobre Nosotros</a>
+              </li>
+              <li>
+                <a href="./nosotros.html">Equipo de Desarrollo</a>
+              </li>
+            </ul>
             </div>
           </div>
           <div class="col-md-4 col-lg-3 pt-5 pt-md-3 pt-lg-5">
@@ -462,7 +459,7 @@
         </div>
       </div>
       <p class="pt-5 pb-2">
-        &copy; RollingCodeSchool 2023 - Todos los derechos reservados
+        &copy; RollingShoesStore. 2023. Todos los derechos reservados.
       </p>
     </footer>
      <!-- Carrito -->
@@ -478,7 +475,7 @@
               <article class="col-12 col-sm-5 col-lg-4 text-center">
                 <img
                   src="../Imágenes/DetalleCarrito/Zapatillas Nike Air Max Excee.jpg"
-                  class="img-fluid imageProductDetailCart"
+                  class="img-fluid imgCart"
                   alt="Zapatilla Nike Air Max Excee"
                 />
               </article>
@@ -514,7 +511,7 @@
               <article class="col-12 col-sm-5 col-lg-4 text-center">
                 <img
                   src="../Imágenes/DetalleCarrito/zapatillas-puma-shuffle.jpg"
-                  class="img-fluid imageProductDetailCart"
+                  class="img-fluid imgCart"
                   alt="Zapatilla Nike Air Max Excee"
                 />
               </article>

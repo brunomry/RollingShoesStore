@@ -98,20 +98,15 @@
                     class="text-decoration-none navLink "
                     >Inicio</a
                   >
-                </li>
-                <li class="nav-item text-center ">
-                  <a
-                    href="./contacto.html"
-                    class="px-3 text-decoration-none navLink "
-                    >Contacto</a
-                  >
-                </li>
-                <li class="nav-item text-center">
-                  <a
-                    href="./nosotros.html"
-                    class="text-decoration-none navLink"
-                    >Nosotros</a
-                  >
+                </li>               
+                <li class="nav-item dropdown text-center">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./detalleCategoriaModa.html">Moda</a></li>
+                    <li><a class="dropdown-item" href="./detalleCategoriaRunning.html">Running</a></li>
+                  </ul>
                 </li>
                 <li
                   class="d-none d-xl-block nav-item text-start text-sm-center navItemSearch order-1 order-xl-0"
@@ -127,6 +122,13 @@
                         aria-label="Search"
                       />
                   </form>
+                </li>
+                <li class="nav-item text-center ">
+                  <a
+                    href="./contacto.html"
+                    class="px-3 text-decoration-none navLink "
+                    >Contacto</a
+                  >
                 </li>
                     <button type="button" class="border-0 bg-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart"
                     ><i class="fa-solid fa-cart-shopping fs-4 iconCart"></i
@@ -158,387 +160,436 @@
         <div
           class="align-items-center d-flex flex-column justify-content-center"
         >
-          <h1 class="p-3 fw-bold">Running</h1>
+          <h1 class="p-3 fw-bold my-lg-5">Running</h1>
         </div>
-        <p class="fw-bold fs-4">Filtros</p>
-        <div class="d-flex flex-column justify-content-center gap-2 flex-sm-row gap-sm-5 w-75 bg-white p-3 border">
-          <div class="me-5">
-            <p class="fw-bold">                 
-                Género                 
-            </p>
-            <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Hombre
-                  </label>
-            </div>
-            <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckChecked"
-                  />
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Mujer
-                  </label>
-            </div>
-          </div>
-          <div class="d-flex flex-column">
-            <p class=" fw-bold">
-              Marca
-            </p>
-            <div class="ps-md-4 row">
-              <div class="form-check col-6 col-md-4 col-lg-2 ps-5 ps-lg-0">
-                <input
-                      class="form-check-input"
+        <article class="row px-sm-0 gx-2 gap-4">
+          <div class="d-flex col-lg-3 flex-column gap-2 gap-xl-5 filters bg-white p-3 border rounded-2">
+            <p class="fw-bold fs-4">Filtros</p>
+            <div class="me-5">
+              <p class="fw-bold">                 
+                  Género                 
+              </p>
+              <div class="form-check ms-2">
+                    <input
+                      class="form-check-input p-2 p-2"
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
                     />
                     <label class="form-check-label" for="flexCheckDefault">
-                      Adidas
+                      Hombre
                     </label>
               </div>
-              <div class="form-check col-6 col-md-4 col-lg-2 ps-5 ps-lg-0">
+              <div class="form-check ms-2">
                     <input
-                      class="form-check-input"
+                      class="form-check-input p-2"
                       type="checkbox"
                       value=""
                       id="flexCheckChecked"
                     />
                     <label class="form-check-label" for="flexCheckChecked">
-                      Nike
-                    </label>
-              </div>
-              <div class="form-check col-6 col-md-4 col-lg-2 ps-5 ps-lg-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Puma
-                    </label>
-              </div>
-              <div class="form-check col-6 col-md-4 col-lg-2 ps-5 ps-lg-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Topper
-                    </label>
-              </div> 
-              <div class="form-check col-6 col-md-4 col-lg-2 me-lg-4 ps-5 ps-lg-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Atlét
-                    </label>
-              </div>
-              <div class="form-check col-6 col-md-4 col-lg-2 ps-5 ps-lg-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Vans
-                    </label>
-              </div>
-              <div class="form-check col-6 col-md-4 col-lg-2 ps-5 ps-lg-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Converse
-                    </label>
-              </div>
-              <div class="form-check col-6 col-md-4 col-lg-2 ps-5 ps-lg-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Kappa
-                    </label>
-              </div>
-              <div class="form-check col-6 col-md-4 col-lg-2 ps-5 ps-lg-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Fila
-                    </label>
-              </div>
-              <div class="form-check col-6 col-md-4 col-lg-2 ps-5 ps-lg-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Kappa
+                      Mujer
                     </label>
               </div>
             </div>
-          </div>
+            <div class="d-flex flex-column">
+              <p class=" fw-bold">
+                Marca
+              </p>
+              <div class="ps-md-5 row">
+                <div class="form-check col-6 ps-5 ps-lg-0">
+                  <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Adidas
+                      </label>
+                </div>
+                <div class="form-check col-6 ps-5 ps-lg-0">
+                      <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Nike
+                      </label>
+                </div>
+                <div class="form-check col-6  ps-5 ps-lg-0">
+                      <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Puma
+                      </label>
+                </div>
+                <div class="form-check col-6  ps-5 ps-lg-0">
+                      <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Topper
+                      </label>
+                </div> 
+                <div class="form-check col-6 ps-5 ps-lg-0">
+                      <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Atlét
+                      </label>
+                </div>
+                <div class="form-check col-6  ps-5 ps-lg-0">
+                      <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Vans
+                      </label>
+                </div>
+                <div class="form-check col-6  ps-5 ps-lg-0">
+                      <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Converse
+                      </label>
+                </div>
+                <div class="form-check col-6  ps-5 ps-lg-0">
+                      <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Kappa
+                      </label>
+                </div>
+                <div class="form-check col-6  ps-5 ps-lg-0">
+                      <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Fila
+                      </label>
+                </div>
+                <div class="form-check col-6  ps-5 ps-lg-0">
+                      <input
+                        class="form-check-input p-2"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Kappa
+                      </label>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg-9 row px-sm-0 gy-2 ">
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running1_Zapatillas Nike LeBron XX Hombre.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Nike Air Max Sc"
+                />  
+                </div>
+                <div class="d-flex justify-content-end px-3">
+                  <i class="fa-regular fa-heart fs-4"></i>                
+                </div>           
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$60.599</p>
+                  <p class="px-3  titleProduct">Zapatillas Nike Air Max Sc</p>
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="detalleProductoRunning.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running2_Zapatillas Nike Air Max Excee.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Nike Revolution 6 Next Nature"
+                  />   
+                </div> 
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>       
+                  <p class=" fs-5 mb-0 fw-bold price ps-3 py-3">$43.999</p>
+                  <p class="px-3  titleProduct">
+                    Zapatillas Nike Revolution 6 Next Nature
+                  </p>
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running3_Zapatillas Nike Lebron Nxxt Gen X Faze Hombre.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Nike Court Vision Lo Be"
+                  /> 
+                </div>  
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>       
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$49.499</p>
+                  <p class="px-3  titleProduct">
+                    Zapatillas Nike Court Vision Lo Be
+                  </p>
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running4_Zapatillas Nike Lebron Xx Asw Hombre.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Nike Air Max Sc Hombre"
+                  />
+                </div>
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>  
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$56.999</p>
+                  <p class="px-3  titleProduct">
+                    Zapatillas Nike Air Max Sc Hombre
+                  </p>
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running5_Zapatillas Topper Candun.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Nike Air Force 1 07 Mujer"
+                  />   
+                </div>     
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>    
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$83.999</p>
+                  <p class="px-3  titleProduct">
+                    Zapatillas Nike Air Force 1 07 Mujer
+                  </p>
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running6_Zapatillas Under Armour Jet 21 Unisex.jpg"
+                  class="card-img-top imgCardHome"
+                  alt=" Zapatillas Nike Court Vision Mid Winter Hombre"
+                  />
+                </div>
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>  
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$71.399</p>
+                  <p class="px-3  titleProduct">
+                    Zapatillas Nike Court Vision Mid Winter Hombre
+                  </p>
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running7_Zapatillas Básquet Under Armour Lockdown 6 Unisex.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Puma Rebound Layup para niños"
+                  />  
+                </div>  
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>         
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$44.999</p>
+                  <p class="px-3  titleProduct">
+                    Zapatillas Puma Rebound Layup para niños
+                  </p>             
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running8_Zapatillas Básquet Under Armour Curry 10 Northern Lights Unisex.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Puma Shuffle"
+                  />  
+                </div>  
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>      
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$41.999</p>
+                  <p class="px-3  titleProduct">Zapatillas Puma Shuffle</p>            
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+              </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running9_Zapatillas Básquet Under Armour Curry Hovr Splash 2 Unisex.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Converse Chuck Taylor All Star Lift Ox"
+                  />   
+                </div>
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>       
+                  <p class=" fs-5 mb-0 fw-bold price ps-3 py-3">$44.899</p>
+                  <p class="px-3  titleProduct">
+                    Zapatillas Converse Chuck Taylor All Star Lift Ox
+                  </p>         
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running10_Zapatillas Nike Air Max Sc.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Nike Air Max Sc"
+                  />
+                </div>
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>  
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$60.599</p>
+                  <p class="px-3  titleProduct">Zapatillas Nike Air Max Sc</p>            
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running6_Zapatillas Under Armour Jet 21 Unisex.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Nike Court Vision Mid Winter Hombre"
+                  />
+                </div>
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>  
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$41.999</p>
+                  <p class="px-3  titleProduct">
+                    Zapatillas Nike Court Vision Mid Winter Hombre
+                  </p>            
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex justify-content-center ">
+              <a class="card cardProduct rounded-2 pb-3 d-block d-flex flex-column" href="./error404.html">
+                <div class="d-flex justify-content-center">
+                  <img
+                  src="../Imágenes/DetalleCategoría/categoria_running/running12_Zapatillas Nike Revolution 6 Next Nature.jpg"
+                  class="card-img-top imgCardHome"
+                  alt="Zapatillas Nike Revolution 6 Next Nature"
+                  />
+                </div>
+                  <div class="d-flex justify-content-end px-3">
+                    <i class="fa-regular fa-heart fs-4"></i>                
+                  </div>  
+                  <p class="fs-5 mb-0 fw-bold price ps-3 py-3">$43.999</p>
+                  <p class="px-3  titleProduct">
+                    Zapatillas Nike Revolution 6 Next Nature
+                  </p>              
+                  <small class="ps-3 text-secondary">hasta 6 cuotas sin interés</small>
+                </a>
+            </div>
+            <section
+            class="d-flex justify-content-center align-content-center mt-5 w-100 col-12"
+          >
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link py-2">Anterior</a>
+                </li>
+                <li class="page-item text-dark">
+                  <a class="page-link py-2 text-dark" href="detalleCategoriaModa.html">1</a>
+                </li>
+                <li class="page-item" aria-current="page">
+                  <a class="page-link py-2 text-dark" href="error404.html">2</a>
+                </li>
+                <li class="page-item" >
+                  <a class="page-link py-2 text-dark" href="error404.html">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link py-2 text-dark" href="error404.html">Siguiente</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
         </div>
-        <article class="row mt-5 px-sm-0">
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running1_Zapatillas Nike LeBron XX Hombre.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Nike Air Max Sc"
-              />           
-                <p class="text-danger fs-4 mb-0">$60.599</p>
-                <p class="px-2">Zapatillas Nike Air Max Sc</p>
-                <a href="./error404.html" class="px-0 py-3 btnSeeMore"
-                  >Ver más</a
-                >
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="detalleProductoRunning.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running2_Zapatillas Nike Air Max Excee.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Nike Revolution 6 Next Nature"
-                />         
-                <p class=" text-danger fs-4 mb-0">$43.999</p>
-                <p class="px-2">
-                  Zapatillas Nike Revolution 6 Next Nature
-                </p>
-                <a href="detalleProductoRunning.html" class="px-0 py-3 btnSeeMore"
-                  >Ver más</a
-                >
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running3_Zapatillas Nike Lebron Nxxt Gen X Faze Hombre.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Nike Court Vision Lo Be"
-                />        
-                <p class="text-danger fs-4 mb-0">$49.499</p>
-                <p class="px-2">
-                  Zapatillas Nike Court Vision Lo Be
-                </p>
-                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running4_Zapatillas Nike Lebron Xx Asw Hombre.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Nike Air Max Sc Hombre"
-                />
-                <p class="text-danger fs-4 mb-0">$56.999</p>
-                <p class="px-2">
-                  Zapatillas Nike Air Max Sc Hombre
-                </p>
-                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running5_Zapatillas Topper Candun.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Nike Air Force 1 07 Mujer"
-                />          
-                <p class="text-danger fs-4 mb-0">$83.999</p>
-                <p class="px-2">
-                  Zapatillas Nike Air Force 1 07 Mujer
-                </p>
-                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running6_Zapatillas Under Armour Jet 21 Unisex.jpg"
-                class="card-img-top imgCardHome"
-                alt=" Zapatillas Nike Court Vision Mid Winter Hombre"
-                />
-                <p class="text-danger fs-4 mb-0">$71.399</p>
-                <p class="px-2">
-                  Zapatillas Nike Court Vision Mid Winter Hombre
-                </p>
-                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running7_Zapatillas Básquet Under Armour Lockdown 6 Unisex.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Puma Rebound Layup para niños"
-                />           
-                <p class="text-danger fs-4 mb-0">$44.999</p>
-                <p class="px-2">
-                  Zapatillas Puma Rebound Layup para niños
-                </p>             
-                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
-            </a>
-          </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running8_Zapatillas Básquet Under Armour Curry 10 Northern Lights Unisex.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Puma Shuffle"
-                />        
-                <p class="text-danger fs-4 mb-0">$41.999</p>
-                <p class="px-2">Zapatillas Puma Shuffle</p>            
-                <a href="detalleProductoModa.html" class="px-0 py-3 btnSeeMore"
-                  >Ver más</a
-                >
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running9_Zapatillas Básquet Under Armour Curry Hovr Splash 2 Unisex.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Converse Chuck Taylor All Star Lift Ox"
-                />        
-                <p class=" text-danger fs-4 mb-0">$44.899</p>
-                <p class="px-2">
-                  Zapatillas Converse Chuck Taylor All Star Lift Ox
-                </p>         
-                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running10_Zapatillas Nike Air Max Sc.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Nike Air Max Sc"
-                />
-                <p class=" text-danger fs-4">$60.599</p>
-                <p class="px-2">Zapatillas Nike Air Max Sc</p>            
-                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running6_Zapatillas Under Armour Jet 21 Unisex.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Nike Court Vision Mid Winter Hombre"
-                />
-                <p class="text-danger fs-4 mb-0">$41.999</p>
-                <p class="px-2">
-                  Zapatillas Nike Court Vision Mid Winter Hombre
-                </p>            
-                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-            <a class="card cardProduct rounded-0 border-0 shadow d-block text-center d-flex flex-column align-items-center" href="./error404.html">
-                <img
-                src="../Imágenes/DetalleCategoría/categoria_running/running12_Zapatillas Nike Revolution 6 Next Nature.jpg"
-                class="card-img-top imgCardHome"
-                alt="Zapatillas Nike Revolution 6 Next Nature"
-                />
-                <p class="text-danger fs-4 mb-0">$43.999</p>
-                <p class="px-2">
-                  Zapatillas Nike Revolution 6 Next Nature
-                </p>              
-                <a href="error404.html" class="px-0 py-3 btnSeeMore">Ver más</a>
-              </a>
-          </div>
+       
         </article>
-        <section
-          class="d-flex justify-content-center align-content-center mt-5"
-        >
-          <nav aria-label="...">
-            <ul class="pagination">
-              <li class="page-item disabled">
-                <a class="page-link">Anterior</a>
-              </li>
-              <li class="page-item active ">
-                <a class="page-link" href="detalleCategoriaRunning.html">1</a>
-              </li>
-              <li class="page-item" aria-current="page">
-                <a class="page-link" href="error404.html">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="error404.html">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="error404.html">Siguiente</a>
-              </li>
-            </ul>
-          </nav>
-        </section>
+        
       </section>
-      <a class="d-block px-4 py-2 rounded-2 bg-success btnWppFixed" href="./error404.html">
-        <i class="fa fa-whatsapp text-white display-3"></i>
+      <a class="d-block px-3 py-2 bg-success btnWppFixed" href="./Pages/error404.html">
+        <i class="fa fa-whatsapp text-white"></i>
       </a>    
     </main>
     <footer>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12 col-lg-3 footerContainer d-flex align-items-start mt-5">
+          <div class="col-md-12  footerContainer d-flex align-items-start mt-5">
             <p class="logoFooter fw-bold">Rolling Shoes Store</p>
           </div>
-          <div class="col-md-4 col-lg-3 pt-3 pt-md-3 pt-lg-5">
+          <div class="col-md-4  pt-3 pt-md-3 pt-lg-5">
             <h5 class="mb-3">Información</h5>
             <div class="informationLinks">
               <ul class="list-unstyled">
-                <li><a href="./error404.html">Medios de pago</a></li>
-                <li>
-                  <a href="./error404.html">Preguntas frecuentes</a>
-                </li>
-                <li>
-                  <a href="./error404.html">Términos y condiciones</a>
-                </li>
-                <li>
-                  <a href="./error404.html">Cambio y/o devolución</a>
-                </li>
-                <li>
-                  <a href="./error404.html">Envíos a domicilio</a>
-                </li>
-                <li>
-                  <a href="./error404.html">Retiros en sucursal</a>
-                </li>
-              </ul>
+                <a href="./error404.html">Preguntas frecuentes</a>
+              </li>
+              <li>
+                <a href="./error404.html">Términos y condiciones</a>
+              </li>
+              <li>
+                <a href="./error404.html">Sobre Nosotros</a>
+              </li>
+              <li>
+                <a href="./nosotros.html">Equipo de Desarrollo</a>
+              </li>
+            </ul>
             </div>
           </div>
-          <div class="col-md-4 col-lg-3 pt-5 pt-md-3 pt-lg-5">
+          <div class="col-md-4  pt-5 pt-md-3 pt-lg-5">
             <h4 class="mb-3">Contacto</h4>
             <div id="footerContact">
               <p>Horarios de atención:</p>
@@ -553,7 +604,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 col-lg-3 pt-5 pt-md-3 pt-lg-5">
+          <div class="col-md-4  pt-5 pt-md-3 pt-lg-5">
             <h4 class="mb-3">Seguinos en nuestras redes</h4>
             <a href="./error404.html" target="_blank" class="text-white"
               ><i class="fa-brands fa-facebook fs-2 mx-1"></i
@@ -571,7 +622,7 @@
         </div>
       </div>
       <p class="pt-5 pb-2">
-        &copy; RollingCodeSchool 2023 - Todos los derechos reservados
+        &copy; RollingShoesStore. 2023. Todos los derechos reservados.
       </p>
     </footer>
       <!-- Carrito -->
@@ -587,7 +638,7 @@
                 <article class="col-12 col-sm-5 col-lg-4 text-center">
                   <img
                     src="../Imágenes/DetalleCarrito/Zapatillas Nike Air Max Excee.jpg"
-                    class="img-fluid imageProductDetailCart"
+                    class="img-fluid imgCart"
                     alt="Zapatilla Nike Air Max Excee"
                   />
                 </article>
@@ -623,7 +674,7 @@
                 <article class="col-12 col-sm-5 col-lg-4 text-center">
                   <img
                     src="../Imágenes/DetalleCarrito/zapatillas-puma-shuffle.jpg"
-                    class="img-fluid imageProductDetailCart"
+                    class="img-fluid imgCart"
                     alt="Zapatilla Nike Air Max Excee"
                   />
                 </article>
