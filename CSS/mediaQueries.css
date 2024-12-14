@@ -2,15 +2,6 @@
   .btnNav{
     width: 30%;
   }
-
-  .containerOrderSummary{
-    position:static;
-  }
-  
-  .cardOrderSummaryBody{
-    background:#fff;
-    color: #000;
-  }
 }
 
 @media all and (min-width:768px){
